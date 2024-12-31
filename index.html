@@ -3,82 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Consulting</title>
+    <title>IT Consultoria em Tecnologia</title>
     <style>
+        /* Estilos Globais */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #f9f9f9;
             color: #333;
-            text-align: center;
+            line-height: 1.6;
         }
 
+        /* Cabeçalho */
         header {
-            background-color: #ffffff;
-            padding: 20px;
+            background-color: #0056b3;
+            color: #fff;
+            text-align: center;
+            padding: 15px 10px;
+        }
+
+        header h1 {
+            font-size: 1.8em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1em;
+            margin: 5px 0 0;
+        }
+
+        /* Menu de Navegação */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0078d7;
+            padding: 10px 0;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        header img {
-            max-width: 300px;
-            height: auto;
-        }
-
-        main {
-            padding: 40px 20px;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            color: #0056b3;
-        }
-
-        p {
-            font-size: 1.2em;
-            margin: 20px 0;
-        }
-
         nav a {
-            margin: 0 10px;
-            color: #0056b3;
+            color: #fff;
             text-decoration: none;
-            font-size: 1.2em;
+            margin: 0 15px;
+            font-size: 1.1em;
         }
 
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Conteúdo Principal */
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        main h2 {
+            font-size: 1.8em;
+            color: #0056b3;
+            margin-bottom: 10px;
+        }
+
+        main p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .highlight {
+            color: #0078d7;
+            font-weight: bold;
+        }
+
+        /* Rodapé */
         footer {
             background-color: #222;
             color: #fff;
+            text-align: center;
             padding: 10px 0;
             position: fixed;
             bottom: 0;
             width: 100%;
+            font-size: 0.9em;
         }
 
         footer p {
             margin: 0;
-            font-size: 0.9em;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 10px 0;
+            }
+
+            main p {
+                font-size: 1em;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="logo.jpg.jpg" alt="IT Consulting Logo">
-    </header>
-    <main>
-        <h1>Bem-vindo à IT Consultoria em Tecnologia</h1>
+        <h1>💻 IT Consultoria em Tecnologia</h1>
         <p>Transformando soluções digitais em resultados reais</p>
-        <nav>
-            <a href="missao.html">Missão</a>
-            <a href="visao.html">Visão</a>
-            <a href="valores.html">Valores</a>
-        </nav>
-        <p>Página em construção, aguardem novidades!</p>
-        <p><a href="mailto:contato@itconsultoria.com.br">Envie-nos um email</a></p>
-        <p><a href="http://bit.ly/4gquSVj" target="_blank">Preencha nosso formulário</a></p>
+    </header>
+    <nav>
+        <a href="#missao">📜 Missão</a>
+        <a href="#visao">🌟 Visão</a>
+        <a href="#valores">💡 Valores</a>
+        <a href="#contato">📞 Contato</a>
+    </nav>
+    <main>
+        <section id="missao">
+            <h2>📜 Nossa Missão</h2>
+            <p>Oferecer soluções personalizadas e inovadoras em gestão de tecnologia, simplificando a vida dos clientes com atendimento ágil, digital e descomplicado.</p>
+        </section>
+        <section id="visao">
+            <h2>🌟 Nossa Visão</h2>
+            <p>Ser referência nacional em consultoria online de gestão de tecnologia, reconhecida pela eficiência e pela proximidade com os clientes, mesmo no ambiente digital.</p>
+        </section>
+        <section id="valores">
+            <h2>💡 Nossos Valores</h2>
+            <p>🔷 <span class="highlight">Integridade:</span> Agimos com ética em todas as interações.<br>
+               🔷 <span class="highlight">Inovação:</span> Oferecemos soluções criativas e atualizadas.<br>
+               🔷 <span class="highlight">Comprometimento:</span> Priorizamos a excelência e o cliente.</p>
+        </section>
+        <section id="contato">
+            <h2>📞 Contato</h2>
+            <p>📧 <a href="mailto:contato@itconsultoria.com.br" style="color: #0056b3; text-decoration: none;">Envie-nos um email</a></p>
+            <p>🔗 <a href="http://bit.ly/4gquSVj" target="_blank" style="color: #0056b3; text-decoration: none;">Preencha nosso formulário</a></p>
+        </section>
     </main>
     <footer>
-        <p>&copy; 2024 IT Consulting. Todos os direitos reservados.</p>
+        <p>&copy; 2024 IT Consultoria em Tecnologia. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
