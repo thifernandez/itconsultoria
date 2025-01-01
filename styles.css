@@ -1,81 +1,64 @@
-/* Estilos Globais */
+/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: url('IT Consultoria em Tecnologia.png') no-repeat center center / cover;
-    color: #333;
-    line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
-
-/* Cabeçalho */
 header {
-    background: url('logo novo.png') no-repeat center center / cover; /* Imagem cobrindo toda a área */
-    padding: 0; /* Remover o padding para que a imagem ocupe todo o espaço */
-    width: 100%; /* Largura total da tela */
-    height: 35vh; /* Altura total da tela */
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-
-header img {
-    max-width: 300px;
-    height: auto;
-}
-
-/* Navegação */
-nav {
-    background-color: #0078d7;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 1.1em;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Conteúdo Principal */
-main {
-    flex: 1;
+    background-color: #f4f4f4;
     padding: 20px;
     text-align: center;
 }
 
-/* Rodapé */
-footer {
-    background-color: #222;
+/* Estilo para a logo */
+.header-logo {
+    width: 200px; /* Ajuste da largura da logo */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    display: block; /* Garante o comportamento de bloco */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside {
+    flex: 1 1 20%;
+    background-color: #333;
     color: #fff;
+    padding: 20px;
+    min-width: 200px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin: 10px 0;
+}
+
+aside ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    flex: 1 1 80%;
+    padding: 20px;
+    min-width: 300px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+footer {
+    background-color: #f4f4f4;
     text-align: center;
-    padding: 10px 0;
-    margin-top: auto;
-    width: 100%;
-}
-
-footer p {
-    margin: 0;
-    font-size: 0.9em;
-}
-
-/* Estilos Responsivos */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-    }
-
-    nav a {
-        margin: 10px 0;
-    }
+    padding: 10px;
+    margin-top: 20px;
 }
