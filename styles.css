@@ -1,195 +1,32 @@
-/* Estilos Globais */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: url('background.png') no-repeat center center / cover;
-    color: #333;
-    line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+.u-section-1 {
+  background-image: url("images/DfHu26H5QI6pAzYIHNPJuVcwz6I4=.jpeg");
+  background-position: 50% 50%;
 }
 
-/* Cabeçalho */
-header {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative;
-    padding: 0;
-    height: 150px;
-    z-index: 10;
+.u-section-1 .u-sheet-1 {
+  min-height: 410px;
 }
 
-header img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 10;
+@media (max-width: 1199px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 338px;
+  }
 }
 
-header a.logo-link {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    color: #0078d7;
-    text-decoration: none;
-    font-size: 1.2em;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 5px 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 15;
+@media (max-width: 991px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 259px;
+  }
 }
 
-header a.logo-link:hover {
-    background-color: #0078d7;
-    color: #fff;
+@media (max-width: 767px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 194px;
+  }
 }
 
-/* Coluna lateral (Menu) */
-aside {
-    background-color: rgba(0, 120, 215, 0.9);
-    padding: 15px;
-    color: #fff;
-    width: 250px;
-    z-index: 5;
-    position: fixed;
-    top: 150px; /* Ajuste para que a coluna lateral não sobreponha o cabeçalho */
-    left: 0;
-    height: calc(100% - 150px); /* Ajusta a altura da coluna lateral para não ultrapassar o cabeçalho */
-}
-
-aside nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-aside nav ul li {
-    margin: 10px 0;
-}
-
-aside nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1em;
-}
-
-aside nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Conteúdo Principal */
-main {
-    margin-left: 250px;
-    padding: 20px;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.9);
-    flex: 1;
-    z-index: 1;
-}
-
-#conteudo h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-/* Rodapé */
-footer {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: auto;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-}
-
-footer p {
-    margin: 0;
-    font-size: 0.9em;
-}
-
-/* Estilos Responsivos */
-@media (max-width: 768px) {
-    /* Ajustes para dispositivos móveis */
-    body {
-        display: block;
-        padding-top: 160px; /* Espaço para o cabeçalho fixo */
-    }
-
-    aside {
-        width: 100%;
-        position: relative;
-        height: auto;
-        padding: 20px;
-        text-align: center;
-        top: 0; /* Remove a posição fixa da coluna lateral */
-    }
-
-    main {
-        margin-left: 0;
-        padding: 15px;
-    }
-
-    header img {
-        width: auto;
-        max-width: 80%;
-        margin: 0 auto;
-    }
-
-    header a.logo-link {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        font-size: 1em;
-    }
-
-    aside nav ul li a {
-        font-size: 1em;
-        margin-bottom: 10px;
-    }
-
-    footer p {
-        font-size: 1em;
-    }
-
-    #conteudo h1 {
-        font-size: 1.8em;
-    }
-}
-
-@media (max-width: 480px) {
-    /* Ajustes para telas muito pequenas, como celulares */
-    header a.logo-link {
-        font-size: 1em;
-        padding: 3px 7px;
-    }
-
-    header img {
-        width: 100%;
-        height: auto;
-    }
-
-    aside {
-        width: 100%;
-        padding: 10px;
-        background-color: rgba(0, 120, 215, 0.9);
-    }
-
-    aside nav ul li {
-        margin: 5px 0;
-    }
-
-    aside nav ul li a {
-        font-size: 1.2em;
-        padding: 8px;
-    }
-
-    main {
-        margin-left: 0;
-    }
+@media (max-width: 575px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 122px;
+  }
 }
