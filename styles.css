@@ -19,6 +19,7 @@ header {
     position: relative;
     padding: 0;
     height: 150px;
+    z-index: 10;
 }
 
 header img {
@@ -55,9 +56,9 @@ aside {
     width: 250px;
     z-index: 5;
     position: fixed;
-    top: 0;
+    top: 150px; /* Ajuste para que a coluna lateral não sobreponha o cabeçalho */
     left: 0;
-    height: 100%;
+    height: calc(100% - 150px); /* Ajusta a altura da coluna lateral para não ultrapassar o cabeçalho */
 }
 
 aside nav ul {
@@ -86,6 +87,7 @@ main {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.9);
     flex: 1;
+    z-index: 1;
 }
 
 #conteudo h1 {
@@ -125,6 +127,7 @@ footer p {
         height: auto;
         padding: 20px;
         text-align: center;
+        top: 0; /* Remove a posição fixa da coluna lateral */
     }
 
     main {
