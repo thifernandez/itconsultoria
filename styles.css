@@ -7,8 +7,8 @@ body {
     color: #333;
     line-height: 1.6;
     display: flex;
-    min-height: 100vh;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Cabeçalho */
@@ -17,18 +17,15 @@ header {
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
-    width: 100%;
+    padding: 0;
     height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1; /* Garantir que o cabeçalho apareça acima do menu */
 }
 
 header img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: 10;
 }
 
 header a.logo-link {
@@ -42,6 +39,7 @@ header a.logo-link {
     padding: 5px 10px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 15;
 }
 
 header a.logo-link:hover {
@@ -49,18 +47,17 @@ header a.logo-link:hover {
     color: #fff;
 }
 
-/* Coluna Lateral (Menu) */
+/* Coluna lateral (Menu) */
 aside {
+    background-color: rgba(0, 120, 215, 0.9);
+    padding: 15px;
+    color: #fff;
+    width: 250px;
+    z-index: 5;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(0, 120, 215, 0.9);
-    padding: 20px;
-    color: #fff;
-    width: 250px;
     height: 100%;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    z-index: 0; /* A coluna lateral fica atrás do cabeçalho */
 }
 
 aside nav ul {
@@ -69,38 +66,31 @@ aside nav ul {
 }
 
 aside nav ul li {
-    margin: 15px 0;
+    margin: 10px 0;
 }
 
 aside nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 1.1em;
-    display: block;
-    padding: 10px;
-    border-radius: 5px;
 }
 
 aside nav ul li a:hover {
-    background-color: rgba(0, 120, 215, 0.7);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 /* Conteúdo Principal */
 main {
-    margin-left: 250px; /* Espaço para a coluna lateral */
+    margin-left: 250px;
     padding: 20px;
-    flex: 1;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.9);
-    margin: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    min-height: calc(100vh - 150px); /* Garante que o conteúdo ocupe o restante da altura */
+    flex: 1;
 }
 
-main h2 {
-    font-size: 2em;
+#conteudo h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
 /* Rodapé */
@@ -111,7 +101,9 @@ footer {
     padding: 10px 0;
     margin-top: auto;
     width: 100%;
-    position: relative;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
 footer p {
@@ -121,21 +113,19 @@ footer p {
 
 /* Estilos Responsivos */
 @media (max-width: 768px) {
-    /* Coluna Lateral */
     aside {
-        position: relative; /* O menu se torna normal em telas menores */
         width: 100%;
+        position: relative;
         height: auto;
     }
 
-    /* Conteúdo Principal */
     main {
-        margin-left: 0; /* Remove o espaçamento da coluna lateral */
+        margin-left: 0;
     }
-    
-    /* Ajuste de links */
-    aside nav ul li a {
-        font-size: 1em;
-        padding: 8px;
+
+    header img {
+        width: auto;
+        max-width: 80%;
+        margin: 0 auto;
     }
 }
