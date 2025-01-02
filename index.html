@@ -1,50 +1,40 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS -->
+    <title>IT Consultoria</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
-        <a href="#" class="logo-link">Logo</a>
-        <img src="logo.png" alt="Logo">
+        <a href="index.html" class="logo-link">⬅ Voltar</a>
+        <img src="logo.png" alt="Logo IT Consultoria">
     </header>
-    
-    <aside>
-        <nav>
-            <ul>
-                <li><a href="#" onclick="showContent('missao')">Missão</a></li>
-                <li><a href="#" onclick="showContent('valores')">Valores</a></li>
-                <li><a href="#" onclick="showContent('visao')">Visão</a></li>
-                <li><a href="#" onclick="showContent('contato')">Contato</a></li>
-            </ul>
-        </nav>
-    </aside>
 
-    <main id="main-content">
-        <!-- O conteúdo das subpáginas será exibido aqui -->
-        <h2>Bem-vindo à página principal!</h2>
+    <main>
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="missao.html">Missão</a></li>
+                    <li><a href="valores.html">Valores</a></li>
+                    <li><a href="visao.html">Visão</a></li>
+                    <li><a href="contatos.html">Contato</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <section id="conteudo">
+            <h1>Bem-vindo à IT Consultoria</h1>
+            <p>Oferecemos soluções inovadoras em gestão de tecnologia para transformar o seu negócio.</p>
+        </section>
     </main>
 
     <footer>
-        <p>© 2025 IT Consultoria em Tecnologia</p>
+        <p>&copy; 2024 IT Consultoria em Tecnologia. Todos os direitos reservados.</p>
     </footer>
-
-    <script>
-        // Função para alterar o conteúdo da área principal com base no clique do menu
-        function showContent(page) {
-            var content = {
-                missao: '<h2>Missão</h2><p>Nosso compromisso é...</p>',
-                valores: '<h2>Valores</h2><p>Nossos valores incluem...</p>',
-                visao: '<h2>Visão</h2><p>Queremos ser líderes em...</p>',
-                contato: '<h2>Contato</h2><p>Entre em contato pelo email...</p>',
-            };
-            
-            // Substitui o conteúdo da div principal com base na página escolhida
-            document.getElementById('main-content').innerHTML = content[page];
-        }
-    </script>
 </body>
+
 </html>
