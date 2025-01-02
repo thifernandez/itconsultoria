@@ -8,6 +8,7 @@ body {
     line-height: 1.6;
     display: flex;
     min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+    flex-direction: column;
 }
 
 /* Cabeçalho */
@@ -52,25 +53,21 @@ aside {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(0, 120, 215, 0.9); /* Cor harmônica com o fundo */
-    padding: 15px;
+    background-color: rgba(0, 120, 215, 0.9);
+    padding: 20px;
     color: #fff;
     width: 250px;
-    height: 100vh; /* Ocupa toda a altura da tela */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    height: 100%;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 aside nav ul {
     list-style: none;
     padding: 0;
-    margin-top: 50px; /* Espaço entre o topo e os itens do menu */
 }
 
 aside nav ul li {
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 aside nav ul li a {
@@ -93,7 +90,7 @@ main {
     margin: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    min-height: 100vh; /* Garante que o conteúdo ocupe toda a altura disponível */
+    min-height: calc(100vh - 150px); /* Garante que o conteúdo principal ocupe o restante da altura */
 }
 
 /* Rodapé */
@@ -104,9 +101,7 @@ footer {
     padding: 10px 0;
     margin-top: auto;
     width: 100%;
-    position: fixed; /* Fixado no rodapé */
-    bottom: 0;
-    left: 0;
+    position: relative; /* Rodapé na parte inferior */
 }
 
 footer p {
