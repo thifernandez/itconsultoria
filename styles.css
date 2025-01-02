@@ -113,19 +113,80 @@ footer p {
 
 /* Estilos Responsivos */
 @media (max-width: 768px) {
+    /* Ajustes para dispositivos móveis */
+    body {
+        display: block;
+        padding-top: 160px; /* Espaço para o cabeçalho fixo */
+    }
+
     aside {
         width: 100%;
         position: relative;
         height: auto;
+        padding: 20px;
+        text-align: center;
     }
 
     main {
         margin-left: 0;
+        padding: 15px;
     }
 
     header img {
         width: auto;
         max-width: 80%;
         margin: 0 auto;
+    }
+
+    header a.logo-link {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 1em;
+    }
+
+    aside nav ul li a {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+
+    #conteudo h1 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes para telas muito pequenas, como celulares */
+    header a.logo-link {
+        font-size: 1em;
+        padding: 3px 7px;
+    }
+
+    header img {
+        width: 100%;
+        height: auto;
+    }
+
+    aside {
+        width: 100%;
+        padding: 10px;
+        background-color: rgba(0, 120, 215, 0.9);
+    }
+
+    aside nav ul li {
+        margin: 5px 0;
+    }
+
+    aside nav ul li a {
+        font-size: 1.2em;
+        padding: 8px;
+    }
+
+    main {
+        margin-left: 0;
     }
 }
