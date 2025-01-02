@@ -14,14 +14,32 @@ body {
 /* Cabeçalho */
 header {
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 header img {
-    max-width: 250px;
+    width: 100%;
     height: auto;
+}
+
+header a.logo-link {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #0078d7;
+    text-decoration: none;
+    font-size: 1.2em;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header a.logo-link:hover {
+    background-color: #0078d7;
+    color: #fff;
 }
 
 /* Coluna lateral (Menu) */
