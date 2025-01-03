@@ -37,6 +37,7 @@
             background-color: rgba(0, 0, 0, 0.5);
             color: #fff;
             padding: 15px;
+            z-index: 10;
         }
 
         .u-header-container {
@@ -49,6 +50,7 @@
             font-size: 1.5em;
         }
 
+        /* Menu */
         .u-menu ul {
             list-style: none;
             display: flex;
@@ -62,6 +64,40 @@
             color: #fff;
             text-decoration: none;
             font-size: 1em;
+        }
+
+        /* Menu Hamburguer */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 4px 0;
+        }
+
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .mobile-menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .mobile-menu ul li {
+            margin: 15px 0;
         }
 
         /* Seção 2, 3 e 4 */
@@ -136,6 +172,14 @@
                 margin: 10px 0;
             }
 
+            .hamburger {
+                display: flex;
+            }
+
+            .mobile-menu.active {
+                display: block;
+            }
+
             .u-container h2 {
                 font-size: 1.6em;
             }
@@ -150,32 +194,6 @@
 
             input, textarea, button {
                 font-size: 1em;
-            }
-        }
-
-        /* Estilo para telas muito pequenas (dispositivos móveis em modo retrato) */
-        @media (max-width: 480px) {
-            .u-header-container {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .u-menu ul {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .u-header-container h1 {
-                font-size: 1.1em;
-                margin-bottom: 10px;
-            }
-
-            .u-menu ul li {
-                margin: 5px 0;
-            }
-
-            .u-footer {
-                padding: 15px 0;
             }
         }
 
@@ -210,8 +228,23 @@
                     <li><a href="#section4">Contato</a></li>
                 </ul>
             </nav>
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
     </header>
+
+    <!-- Menu mobile -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#section1">Início</a></li>
+            <li><a href="#section2">Sobre</a></li>
+            <li><a href="#section3">Serviços</a></li>
+            <li><a href="#section4">Contato</a></li>
+        </ul>
+    </div>
 
     <!-- Seção de Início com fundo -->
     <section id="section1" class="u-section u-section-1">
@@ -271,5 +304,12 @@
             </a>
         </div>
     </footer>
+
+    <script>
+        // JavaScript para o menu hamburguer
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
