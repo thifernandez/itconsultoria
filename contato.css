@@ -1,0 +1,149 @@
+/* Reset de margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+.u-header {
+    background-color: #478ac9;
+    color: white;
+    padding: 10px 0;
+}
+
+.u-header h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+/* Menu de navegação */
+.u-menu {
+    background-color: #333;
+}
+
+.u-nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+.u-nav-link:hover {
+    background-color: #478ac9;
+}
+
+/* Formulário de Contato */
+.u-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.u-form-group {
+    margin-bottom: 15px;
+}
+
+.u-label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.u-input, .u-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.u-input:focus, .u-textarea:focus {
+    border-color: #478ac9;
+    outline: none;
+}
+
+.u-form-submit {
+    text-align: center;
+}
+
+.u-btn-submit {
+    background-color: #478ac9;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.u-btn-submit:hover {
+    background-color: #3578b5;
+}
+
+/* Rodapé */
+.u-footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.u-footer a {
+    color: #478ac9;
+    text-decoration: none;
+}
+
+.u-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Social Icons */
+.u-social-icons {
+    margin-top: 20px;
+}
+
+.u-social-icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+}
+
+/* Backlink */
+.u-backlink {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.u-backlink a {
+    color: #478ac9;
+    text-decoration: none;
+}
+
+.u-backlink a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .u-header h1 {
+        font-size: 1.5em;
+    }
+
+    .u-form {
+        padding: 15px;
+    }
+
+    .u-footer {
+        font-size: 14px;
+    }
+}
