@@ -1,75 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="IT Consultoria em Tecnologia">
+    <meta name="description" content="">
     <title>Contato</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: url('backgroundcontato.jpeg') no-repeat center center fixed;
-            background-size: cover;
-            color: #333;
-        }
-        header, footer {
-            background-color: #f4f4f4;
-            padding: 1em 0;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
-        }
-        section {
-            padding: 2em;
-            background-color: rgba(255, 255, 255, 0.8);
-            margin: 20px auto;
-            width: 90%;
-            max-width: 600px;
-            border-radius: 10px;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        form input, form textarea, form button {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            width: 100%;
-        }
-        form button {
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="Contato.css" media="screen">
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Contato">
+    <meta property="og:type" content="website">
 </head>
 <body>
-<header>
-    <h1>IT Consultoria em Tecnologia</h1>
-    <nav>
-        <a href="index.html">Página Inicial</a>
-        <a href="Sobre.html">Sobre</a>
-        <a href="Contato.html">Contato</a>
-    </nav>
+<header class="u-clearfix u-header">
+    <div class="u-section-rows">
+        <div class="u-section-row">
+            <div class="u-clearfix u-sheet">
+                <h1 class="u-align-center u-text">IT Consultoria em Tecnologia</h1>
+            </div>
+        </div>
+        <div class="u-grey-5 u-section-row">
+            <div class="u-clearfix u-sheet u-valign-middle">
+                <nav class="u-menu u-menu-one-level u-offcanvas">
+                    <ul class="u-nav u-spacing-2 u-unstyled">
+                        <li class="u-nav-item"><a href="./" class="u-nav-link">Página Inicial</a></li>
+                        <li class="u-nav-item"><a href="Sobre.html" class="u-nav-link">Sobre</a></li>
+                        <li class="u-nav-item"><a href="Contato.html" class="u-nav-link">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
 </header>
-<section>
-    <h2>Fale Conosco</h2>
-    <form action="mailto:seu-email@example.com" method="post" enctype="text/plain">
-        <input type="text" name="name" placeholder="Seu nome" required>
-        <input type="email" name="email" placeholder="Seu email" required>
-        <textarea name="message" placeholder="Sua mensagem" rows="4" required></textarea>
-        <button type="submit">Enviar</button>
-    </form>
+<section class="u-align-center u-clearfix u-container-align-center u-image u-section-1">
+    <div class="u-clearfix u-sheet">
+        <div class="u-form u-form-1">
+            <form action="mailto:contato@itconsultoria.com.br" method="post" enctype="text/plain" class="u-form-spacing-15 u-form-vertical">
+                <div class="u-form-group u-form-name">
+                    <label for="name-6797" class="u-label">Nome</label>
+                    <input type="text" id="name-6797" name="name" class="u-input u-input-rectangle" placeholder="Seu nome" required>
+                </div>
+                <div class="u-form-email u-form-group">
+                    <label for="email-6797" class="u-label">Email</label>
+                    <input type="email" id="email-6797" name="email" class="u-input u-input-rectangle" placeholder="Seu email" required>
+                </div>
+                <div class="u-form-group u-form-message">
+                    <label for="message-6797" class="u-label">Mensagem</label>
+                    <textarea id="message-6797" name="message" class="u-input u-input-rectangle" placeholder="Sua mensagem" rows="4" required></textarea>
+                </div>
+                <div class="u-align-left u-form-group u-form-submit">
+                    <button type="submit" class="u-btn u-btn-submit u-button-style">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </section>
-<footer>
-    <p>2024 IT Consultoria em Tecnologia. Todos os direitos reservados.</p>
+<footer class="u-align-center u-clearfix u-footer u-grey-80">
+    <div class="u-clearfix u-sheet">
+        <p class="u-text">2024 IT Consultoria em Tecnologia. Todos os direitos reservados.</p>
+        <div class="u-social-icons">
+            <a class="u-social-url" href="https://www.instagram.com/inst.itconsultoria" target="_blank" title="Instagram">
+                <span class="u-icon u-social-icon u-social-instagram u-icon-1"></span>
+            </a>
+        </div>
+    </div>
 </footer>
 </body>
 </html>
