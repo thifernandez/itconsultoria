@@ -4,20 +4,185 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT Consultoria</title>
-    <link rel="stylesheet" href="index.css">
     <style>
+        /* Reset de estilos para garantir consistência */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
         /* Seção 1 com fundo */
         #section1 {
             background-image: url('backgroundinicial.jpeg');
             background-size: cover;
             background-position: center;
-            height: 80vh; /* Ajusta para ocupar toda a altura da tela */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Estilo para o header */
+        .u-header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 15px;
+        }
+
+        .u-header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .u-header-container h1 {
+            font-size: 1.5em;
+        }
+
+        .u-menu ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .u-menu ul li {
+            margin-left: 20px;
+        }
+
+        .u-menu ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        /* Seção 2, 3 e 4 */
+        section {
+            padding: 40px 20px;
+        }
+
+        .u-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .u-container h2 {
+            text-align: center;
+            color: #e74c3c;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .u-container p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        /* Estilos para o formulário */
+        input, textarea, button {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        button {
+            background-color: #e74c3c;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #c0392b;
+        }
+
+        /* Footer */
+        .u-footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .u-footer img {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+        }
+
+        /* Estilo para telas pequenas */
+        @media (max-width: 768px) {
+            .u-header-container h1 {
+                font-size: 1.2em;
+            }
+
+            .u-menu ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .u-menu ul li {
+                margin: 10px 0;
+            }
+
+            .u-container h2 {
+                font-size: 1.6em;
+            }
+
+            .u-container p {
+                font-size: 1em;
+            }
+
+            section {
+                padding: 30px 15px;
+            }
+
+            input, textarea, button {
+                font-size: 1em;
+            }
+        }
+
+        /* Estilo para telas muito pequenas (dispositivos móveis em modo retrato) */
+        @media (max-width: 480px) {
+            .u-header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .u-menu ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .u-header-container h1 {
+                font-size: 1.1em;
+                margin-bottom: 10px;
+            }
+
+            .u-menu ul li {
+                margin: 5px 0;
+            }
+
+            .u-footer {
+                padding: 15px 0;
+            }
         }
     </style>
 </head>
 <body>
     <header class="u-header">
-        <div class="u-sheet u-header-container">
+        <div class="u-header-container">
             <h1 class="u-text u-title">IT Consultoria em Tecnologia</h1>
             <nav class="u-menu">
                 <ul>
@@ -36,9 +201,9 @@
     </section>
 
     <!-- Seção Sobre -->
-    <section id="section2" class="u-section u-section-2" style="background-color: #ffffff; color: #333; padding: 40px 0;">
+    <section id="section2" class="u-section u-section-2" style="background-color: #ffffff;">
         <div class="u-container">
-            <h2 style="font-size: 2em; color: #e74c3c; text-align: center; margin-bottom: 20px;">Sobre</h2>
+            <h2>Sobre</h2>
             <p>
                 A IT Consultoria em Tecnologia nasceu de um sonho: transformar o mundo da tecnologia em um ambiente mais acessível, eficiente e inovador para todos. Tudo começou com a minha paixão pela tecnologia e pela busca constante por soluções que realmente fizessem a diferença no dia a dia das pessoas e das empresas. Após anos trabalhando na área, percebi que muitas empresas enfrentavam os mesmos desafios: lidar com a complexidade de sistemas, integrar tecnologias e, acima de tudo, encontrar parceiros confiáveis que entendessem suas necessidades. Foi então que decidi unir minha experiência, criatividade e determinação para criar algo novo. Assim, em [ano de fundação], nasceu a IT Consultoria em Tecnologia, com a missão de oferecer consultoria personalizada, soluções práticas e um atendimento humano e ágil. Desde o início, nossa visão foi clara: ser uma referência nacional em gestão de tecnologia, não apenas por nossa expertise, mas também pelo compromisso com nossos clientes. Cada projeto que realizamos é guiado pelos nossos valores: integridade, inovação e comprometimento. Hoje, temos orgulho de impactar positivamente empresas de diferentes tamanhos e segmentos. Seja ajudando a otimizar processos, implementando novas ferramentas ou capacitando equipes, estamos aqui para transformar desafios em oportunidades. Acreditamos que a tecnologia não é apenas uma ferramenta, mas um meio de criar conexões, impulsionar negócios e simplificar vidas. E seguimos firmes nesse propósito, sempre inovando e crescendo junto com você. Obrigado por fazer parte dessa história!
             </p>
@@ -46,57 +211,45 @@
     </section>
 
     <!-- Seção de Serviços -->
-    <section id="section3" class="u-section u-section-3" style="background-color: #f4f4f4; color: #333; padding: 40px 0;">
+    <section id="section3" class="u-section u-section-3" style="background-color: #f4f4f4;">
         <div class="u-container">
-            <h2 style="font-size: 2em; color: #e74c3c; text-align: center; margin-bottom: 20px;">Serviços</h2>
-            <ul style="list-style: none; padding: 0;">
-                <li style="font-size: 1.2em; margin-bottom: 15px;">
-                    <strong style="color: #e74c3c;">Consultoria em Infraestrutura de TI:</strong> Planejamento e implementação de soluções de hardware, redes e servidores.
-                </li>
-                <li style="font-size: 1.2em; margin-bottom: 15px;">
-                    <strong style="color: #e74c3c;">Gestão de Sistemas:</strong> Implantação, manutenção e otimização de sistemas corporativos e softwares personalizados.
-                </li>
-                <li style="font-size: 1.2em; margin-bottom: 15px;">
-                    <strong style="color: #e74c3c;">Suporte Técnico:</strong> Atendimento especializado para resolução de problemas técnicos e suporte contínuo aos usuários.
-                </li>
-                <li style="font-size: 1.2em; margin-bottom: 15px;">
-                    <strong style="color: #e74c3c;">Consultoria em Nuvem:</strong> Implementação de soluções baseadas na nuvem para armazenamento de dados, colaboração e produtividade.
-                </li>
-                <li style="font-size: 1.2em; margin-bottom: 15px;">
-                    <strong style="color: #e74c3c;">Treinamentos:</strong> Capacitação de equipes para o uso eficiente de novas tecnologias e ferramentas.
-                </li>
-                <li style="font-size: 1.2em; margin-bottom: 15px;">
-                    <strong style="color: #e74c3c;">Avaliação de Segurança:</strong> Auditoria e implementação de soluções para garantir a segurança da informação e a proteção de dados.
-                </li>
+            <h2>Serviços</h2>
+            <ul>
+                <li><strong>Consultoria em Infraestrutura de TI:</strong> Planejamento e implementação de soluções de hardware, redes e servidores.</li>
+                <li><strong>Gestão de Sistemas:</strong> Implantação, manutenção e otimização de sistemas corporativos e softwares personalizados.</li>
+                <li><strong>Suporte Técnico:</strong> Atendimento especializado para resolução de problemas técnicos e suporte contínuo aos usuários.</li>
+                <li><strong>Consultoria em Nuvem:</strong> Implementação de soluções baseadas na nuvem para armazenamento de dados, colaboração e produtividade.</li>
+                <li><strong>Treinamentos:</strong> Capacitação de equipes para o uso eficiente de novas tecnologias e ferramentas.</li>
+                <li><strong>Avaliação de Segurança:</strong> Auditoria e implementação de soluções para garantir a segurança da informação e a proteção de dados.</li>
             </ul>
         </div>
     </section>
 
     <!-- Seção de Contato -->
-    <section id="section4" class="u-section u-section-4" style="background-color: #ffffff; color: #333; padding: 40px 0;">
+    <section id="section4" class="u-section u-section-4" style="background-color: #ffffff;">
         <div class="u-container" style="max-width: 800px; margin: 0 auto;">
-            <h2 style="font-size: 2em; color: #e74c3c; text-align: center; margin-bottom: 20px;">Contato</h2>
-            <p style="font-size: 1.2em; text-align: center; margin-bottom: 30px;">Entre em contato conosco para mais informações ou para agendar uma consulta personalizada:</p>
-            <form action="enviar.php" method="POST" enctype="multipart/form-data" style="display: flex; flex-direction: column; gap: 15px;">
-                <label for="name" style="font-size: 1.1em;">Nome:</label>
-                <input type="text" id="name" name="name" required style="padding: 10px; font-size: 1em; border: 1px solid #ccc; border-radius: 5px; width: 100%;">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para mais informações ou para agendar uma consulta personalizada:</p>
+            <form action="enviar.php" method="POST">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
 
-                <label for="email" style="font-size: 1.1em;">Email:</label>
-                <input type="email" id="email" name="email" required style="padding: 10px; font-size: 1em; border: 1px solid #ccc; border-radius: 5px; width: 100%;">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-                <label for="message" style="font-size: 1.1em;">Mensagem:</label>
-                <textarea id="message" name="message" rows="6" style="padding: 10px; font-size: 1em; border: 1px solid #ccc; border-radius: 5px; width: 100%;"></textarea>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="6"></textarea>
 
-                <button type="submit" style="background-color: #e74c3c; color: white; padding: 15px 30px; font-size: 1.1em; border: none; border-radius: 5px; cursor: pointer; text-align: center; width: 100%;">Enviar</button>
+                <button type="submit">Enviar</button>
             </form>
         </div>
     </section>
 
-    <footer class="u-footer" style="text-align: center; padding: 20px; background-color: #333; color: white;">
+    <footer class="u-footer">
         <div class="u-container">
             <p>&copy; 2025 IT Consultoria. Todos os direitos reservados.</p>
             <a href="https://www.instagram.com" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram" style="width: 30px; height: 30px; vertical-align: middle;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram">
             </a>
         </div>
     </footer>
