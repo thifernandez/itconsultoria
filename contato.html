@@ -3,52 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="IT Consultoria em Tecnologia">
-    <meta name="description" content="Contato - IT Consultoria em Tecnologia">
-    <title>Contato - IT Consultoria em Tecnologia</title>
+    <title>Contato</title>
     <link rel="stylesheet" href="contato.css">
 </head>
 <body>
-    <!-- Cabeçalho -->
     <header>
         <div class="container">
             <h1>IT Consultoria em Tecnologia</h1>
             <nav>
                 <ul>
-                    <li><a href="./">Página Inicial</a></li>
-                    <li><a href="Sobre.html">Sobre</a></li>
-                    <li><a href="Contato.html">Contato</a></li>
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Seção de Formulário de Contato -->
     <section class="form-section">
         <div class="container">
-            <h2>Entre em Contato Conosco</h2>
-            <form action="processar_contato.php" method="POST" class="form">
-                <label for="nome">Nome:</label>
+            <h2>Entre em Contato</h2>
+            <form action="processa_formulario.php" method="POST" class="form">
+                <label for="nome">Nome</label>
                 <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Seu email" required>
-
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" rows="4" required></textarea>
-
+                
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Sua mensagem" required></textarea>
+                
                 <button type="submit">Enviar</button>
             </form>
         </div>
     </section>
 
-    <!-- Rodapé -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 IT Consultoria em Tecnologia. Todos os direitos reservados.</p>
-            <div class="social-icons">
-                <a href="https://www.instagram.com/inst.itconsultoria" target="_blank">Instagram</a>
-            </div>
+            <p>2024 IT Consultoria em Tecnologia. Todos os direitos reservados.</p>
         </div>
     </footer>
 </body>
