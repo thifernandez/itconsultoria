@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT Consultoria</title>
     <style>
-        /* Reset de estilos */
+        /* Reset de estilos para garantir consistência */
         * {
             margin: 0;
             padding: 0;
@@ -17,147 +17,239 @@
             color: #333;
         }
 
-        /* Estilo do cabeçalho */
+        /* Seção 1 com fundo */
+        #section1 {
+            background-image: url('backgroundinicial.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Estilo para o header */
         .u-header {
-            position: fixed;
+            position: absolute;
             top: 0;
             left: 0;
             right: 0;
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: rgba(0, 0, 0, 0.5);
             color: #fff;
             padding: 15px;
-            z-index: 10;
+            z-index: 1000;
+        }
+
+        .u-header-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        .u-header h1 {
+        .u-header-container h1 {
             font-size: 1.5em;
-            margin-left: 15px;
         }
 
-        /* Menu Hamburguer */
+        /* Menu principal */
+        .u-menu {
+            display: none;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, 0.9);
+            position: absolute;
+            top: 60px;
+            right: 15px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .u-menu ul {
+            list-style: none;
+        }
+
+        .u-menu ul li {
+            margin: 10px 0;
+        }
+
+        .u-menu ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        /* Botão hambúrguer */
         .hamburger {
             display: flex;
             flex-direction: column;
             cursor: pointer;
-            margin-right: 15px;
         }
 
         .hamburger div {
-            width: 30px;
+            width: 25px;
             height: 3px;
-            background-color: white;
-            margin: 5px 0;
+            background-color: #fff;
+            margin: 4px 0;
         }
 
-        /* Menu oculto inicialmente */
-        .mobile-menu {
-            display: none;
-            position: fixed;
-            top: 60px;
-            right: 0;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.9);
-            text-align: center;
-            padding: 20px 0;
-            z-index: 9;
-        }
-
-        .mobile-menu ul {
-            list-style: none;
-        }
-
-        .mobile-menu ul li {
-            margin: 15px 0;
-        }
-
-        .mobile-menu ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.2em;
-            font-weight: bold;
-        }
-
-        /* Menu ativo */
-        .mobile-menu.active {
-            display: block;
-        }
-
-        /* Estilo geral */
+        /* Seção 2, 3 e 4 */
         section {
-            padding: 80px 20px;
+            padding: 40px 20px;
         }
 
-        /* Fundo para demonstração */
-        #section1 {
-            background: url('backgroundinicial.jpeg') no-repeat center center/cover;
-            height: 100vh;
+        .u-container {
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
-        #section2, #section3, #section4 {
-            background-color: #f4f4f4;
-        }
-
-        #section2 h2, #section3 h2, #section4 h2 {
+        .u-container h2 {
             text-align: center;
             color: #e74c3c;
             margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .u-container p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        /* Estilos para o formulário */
+        input, textarea, button {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        button {
+            background-color: #e74c3c;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #c0392b;
+        }
+
+        /* Footer */
+        .u-footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .u-footer img {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+        }
+
+        /* Estilo responsivo */
+        @media (max-width: 768px) {
+            .u-menu {
+                display: flex;
+            }
+
+            .u-header-container {
+                justify-content: space-between;
+            }
+
+            .u-container h2 {
+                font-size: 1.6em;
+            }
+
+            .u-container p {
+                font-size: 1em;
+            }
+
+            section {
+                padding: 30px 15px;
+            }
         }
     </style>
 </head>
 <body>
     <header class="u-header">
-        <h1>IT Consultoria</h1>
-        <div class="hamburger" id="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
+        <div class="u-header-container">
+            <h1 class="u-text u-title">IT Consultoria em Tecnologia</h1>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav class="u-menu" id="menu">
+                <ul>
+                    <li><a href="#section1">Início</a></li>
+                    <li><a href="#section2">Sobre</a></li>
+                    <li><a href="#section3">Serviços</a></li>
+                    <li><a href="#section4">Contato</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <!-- Menu mobile -->
-    <div class="mobile-menu" id="mobileMenu">
-        <ul>
-            <li><a href="#section1">INÍCIO</a></li>
-            <li><a href="#section2">SOBRE</a></li>
-            <li><a href="#section3">SERVIÇOS</a></li>
-            <li><a href="#section4">CONTATO</a></li>
-        </ul>
-    </div>
-
-    <!-- Seção de demonstração -->
-    <section id="section1">
-        <h1 style="color: white; text-align: center; margin-top: 40%;">Bem-vindo à IT Consultoria</h1>
+    <!-- Seção de Início com fundo -->
+    <section id="section1" class="u-section u-section-1">
+        <!-- Conteúdo opcional aqui, se necessário -->
     </section>
 
-    <section id="section2">
-        <h2>Sobre</h2>
-        <p style="text-align: center; max-width: 600px; margin: 0 auto;">
-            A IT Consultoria oferece soluções personalizadas para empresas que buscam otimizar seus processos tecnológicos.
-        </p>
+    <!-- Seção Sobre -->
+    <section id="section2" class="u-section u-section-2" style="background-color: #ffffff;">
+        <div class="u-container">
+            <h2>Sobre</h2>
+            <p>A IT Consultoria em Tecnologia nasceu de um sonho...</p>
+        </div>
     </section>
 
-    <section id="section3">
-        <h2>Serviços</h2>
-        <ul style="text-align: center; list-style: none;">
-            <li>Consultoria em TI</li>
-            <li>Gestão de Sistemas</li>
-            <li>Suporte Técnico</li>
-        </ul>
+    <!-- Seção de Serviços -->
+    <section id="section3" class="u-section u-section-3" style="background-color: #f4f4f4;">
+        <div class="u-container">
+            <h2>Serviços</h2>
+            <ul>
+                <li><strong>Consultoria em Infraestrutura de TI</strong></li>
+                <li><strong>Gestão de Sistemas</strong></li>
+                <li><strong>Suporte Técnico</strong></li>
+                <li><strong>Consultoria em Nuvem</strong></li>
+                <li><strong>Treinamentos</strong></li>
+                <li><strong>Avaliação de Segurança</strong></li>
+            </ul>
+        </div>
     </section>
 
-    <section id="section4">
-        <h2>Contato</h2>
-        <p style="text-align: center;">Entre em contato conosco para saber mais.</p>
+    <!-- Seção de Contato -->
+    <section id="section4" class="u-section u-section-4" style="background-color: #ffffff;">
+        <div class="u-container" style="max-width: 800px; margin: 0 auto;">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco...</p>
+            <form action="enviar.php" method="POST">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="6"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </section>
+
+    <footer class="u-footer">
+        <div class="u-container">
+            <p>&copy; 2025 IT Consultoria. Todos os direitos reservados.</p>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram">
+            </a>
+        </div>
+    </footer>
 
     <script>
-        // JavaScript para o menu hamburguer
-        document.getElementById('hamburger').addEventListener('click', function () {
-            document.getElementById('mobileMenu').classList.toggle('active');
-        });
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        }
     </script>
 </body>
 </html>
