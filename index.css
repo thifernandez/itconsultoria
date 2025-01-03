@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-color: #f4f4f4;
 }
 
 .header {
@@ -35,9 +36,40 @@ body {
 }
 
 .hero {
-    background-color: #f4f4f4;
     text-align: center;
     padding: 2rem;
+    background: url('backgroundinicial.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+.hero h2 {
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+
+.hero p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.warning-section {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.warning-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.warning-text {
+    color: red;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .footer {
