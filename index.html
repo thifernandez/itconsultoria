@@ -13,6 +13,10 @@
             padding: 0;
             background: url('backgroundinicial.jpeg') no-repeat center center fixed;
             background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
         }
         header {
             background-color: rgba(0, 0, 0, 0.7);
@@ -33,14 +37,35 @@
         nav a:hover {
             background: #575757;
         }
+        main {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+        .construction {
+            color: red;
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .construction img {
+            width: 30px;
+            height: 30px;
+        }
         footer {
             background: #333;
             color: white;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
         }
     </style>
 </head>
@@ -54,10 +79,15 @@
         <a href="contato.html">Contato</a>
     </nav>
     <main>
-        <section>
+        <div>
             <h2>Bem-vindo à IT Consultoria em Tecnologia</h2>
             <p>Transformando soluções digitais em resultados reais.</p>
-        </section>
+        </div>
+        <div class="construction">
+            <img src="icon-warning.png" alt="Atenção">
+            <span>PÁGINA EM CONSTRUÇÃO</span>
+            <img src="icon-warning.png" alt="Atenção">
+        </div>
     </main>
     <footer>
         <p>&copy; 2024 IT Consultoria em Tecnologia. Todos os direitos reservados.</p>
