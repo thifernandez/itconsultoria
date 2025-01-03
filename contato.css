@@ -7,6 +7,15 @@
 
 /* Fonte padrão */
 body {
+    background-image: url('backgroundcontato.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f1f1f1;
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
     font-family: 'Arial', sans-serif;
     background-image: url('backgroundcontato.jpeg'); /* Adicionando a imagem de fundo */
     background-size: cover; /* Faz a imagem cobrir toda a tela */
