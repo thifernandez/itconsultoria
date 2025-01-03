@@ -1,45 +1,66 @@
 <!DOCTYPE html>
-<html style="font-size: 16px;" lang="pt">
+<html lang="pt">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="IT Consultoria em Tecnologia">
-    <meta name="description" content="Consultoria especializada em tecnologia.">
+    <meta name="description" content="Página inicial da IT Consultoria em Tecnologia">
     <title>Página Inicial</title>
-    <link rel="stylesheet" href="styles.css" media="screen">
-    <link rel="stylesheet" href="index.css" media="screen">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Open+Sans:300,400,600,700">
-    <meta name="theme-color" content="#478ac9">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('backgroundinicial.jpeg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
+        nav a:hover {
+            background: #575757;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-<header class="header">
-    <div class="header-container">
-        <h1 class="logo">IT Consultoria em Tecnologia</h1>
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="index.html">Página Inicial</a></li>
-                <li><a href="Sobre.html">Sobre</a></li>
-                <li><a href="Contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-<section class="hero">
-    <div class="hero-content">
-        <h2>Bem-vindo à IT Consultoria em Tecnologia</h2>
-        <p>Oferecemos soluções inovadoras para simplificar sua vida digital.</p>
-    </div>
-</section>
-
-<footer class="footer">
-    <div class="footer-container">
-        <p>© 2024 IT Consultoria em Tecnologia. Todos os direitos reservados.</p>
-        <div class="social-icons">
-            <a href="https://www.instagram.com/inst.itconsultoria" target="_blank" title="Instagram">Instagram</a>
-        </div>
-    </div>
-</footer>
-
+    <header>
+        <h1>IT Consultoria em Tecnologia</h1>
+    </header>
+    <nav>
+        <a href="index.html">Página Inicial</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Bem-vindo à IT Consultoria em Tecnologia</h2>
+            <p>Transformando soluções digitais em resultados reais.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 IT Consultoria em Tecnologia. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
