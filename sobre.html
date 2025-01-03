@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Sobre nós, Missão, Valores, Visão">
     <title>Sobre</title>
     <style>
         body {
@@ -26,6 +25,31 @@
         }
         section {
             padding: 2em;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 20px auto;
+            width: 90%;
+            max-width: 1200px;
+            border-radius: 10px;
+        }
+        h2 {
+            text-align: center;
+            color: #007BFF;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .column {
+            flex: 1;
+            min-width: 250px;
+            padding: 1em;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .column h3 {
+            margin-top: 0;
         }
     </style>
 </head>
@@ -40,8 +64,21 @@
 </header>
 <section>
     <h2>Sobre Nós</h2>
-    <p>A IT Consultoria em Tecnologia nasceu de um sonho: transformar o mundo da tecnologia...</p>
-    <!-- Conteúdo adicional da página "Sobre" -->
+    <p>A IT Consultoria em Tecnologia nasceu de um sonho: transformar o mundo da tecnologia em um ambiente mais acessível, eficiente e inovador...</p>
+    <div class="content">
+        <div class="column">
+            <h3>Missão</h3>
+            <p>Oferecer consultoria personalizada, soluções práticas e um atendimento humano e ágil.</p>
+        </div>
+        <div class="column">
+            <h3>Valores</h3>
+            <p>Integridade, inovação e comprometimento.</p>
+        </div>
+        <div class="column">
+            <h3>Visão</h3>
+            <p>Ser referência nacional e internacional em consultoria e gestão de tecnologia...</p>
+        </div>
+    </div>
 </section>
 <footer>
     <p>2024 IT Consultoria em Tecnologia. Todos os direitos reservados.</p>
