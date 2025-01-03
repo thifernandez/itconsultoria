@@ -1,149 +1,137 @@
-/* Reset de margens e paddings padrão */
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Corpo da página */
+/* Fonte padrão */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    background-image: url('backgroundcontato.jpeg'); /* Adicionando a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Faz a imagem de fundo não rolar junto com o conteúdo */
     color: #333;
 }
 
+/* Container centralizado */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
 /* Cabeçalho */
-.u-header {
-    background-color: #478ac9;
-    color: white;
-    padding: 10px 0;
-}
-
-.u-header h1 {
+header {
+    background-color: rgba(71, 138, 201, 0.8); /* Fundo semi-transparente */
+    padding: 20px 0;
     text-align: center;
-    font-size: 2em;
-}
-
-/* Menu de navegação */
-.u-menu {
-    background-color: #333;
-}
-
-.u-nav-link {
     color: white;
-    text-decoration: none;
-    padding: 10px;
-    display: inline-block;
 }
 
-.u-nav-link:hover {
-    background-color: #478ac9;
-}
-
-/* Formulário de Contato */
-.u-form {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 50px;
-}
-
-.u-form-group {
-    margin-bottom: 15px;
-}
-
-.u-label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-}
-
-.u-input, .u-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+header h1 {
+    font-size: 2.5em;
     margin-bottom: 10px;
 }
 
-.u-input:focus, .u-textarea:focus {
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seção do formulário */
+.form-section {
+    padding: 40px 0;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente para o formulário */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.form-section h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.form input, .form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.form input:focus, .form textarea:focus {
     border-color: #478ac9;
     outline: none;
 }
 
-.u-form-submit {
-    text-align: center;
-}
-
-.u-btn-submit {
+.form button {
     background-color: #478ac9;
     color: white;
-    padding: 10px 20px;
-    border-radius: 4px;
-    text-decoration: none;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
 }
 
-.u-btn-submit:hover {
+.form button:hover {
     background-color: #3578b5;
 }
 
 /* Rodapé */
-.u-footer {
+footer {
     background-color: #333;
     color: white;
     padding: 20px 0;
     text-align: center;
 }
 
-.u-footer a {
-    color: #478ac9;
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .social-icons a {
+    color: white;
+    font-size: 1.2em;
     text-decoration: none;
 }
 
-.u-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Social Icons */
-.u-social-icons {
-    margin-top: 20px;
-}
-
-.u-social-icons a {
-    margin: 0 10px;
-    color: white;
-    font-size: 24px;
-}
-
-/* Backlink */
-.u-backlink {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
-
-.u-backlink a {
-    color: #478ac9;
-    text-decoration: none;
-}
-
-.u-backlink a:hover {
+footer .social-icons a:hover {
     text-decoration: underline;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
-    .u-header h1 {
-        font-size: 1.5em;
+    .container {
+        width: 90%;
     }
 
-    .u-form {
-        padding: 15px;
+    header h1 {
+        font-size: 2em;
     }
 
-    .u-footer {
-        font-size: 14px;
+    .form-section h2 {
+        font-size: 1.8em;
     }
 }
