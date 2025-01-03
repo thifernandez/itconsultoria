@@ -1,98 +1,63 @@
-/* styles.css */
-
+/* Estilos gerais */
 body {
-    font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
 }
 
-.header {
-    background-color: #478ac9;
+.u-header {
+    background-color: #333;
     color: #fff;
-    padding: 1rem;
+    padding: 20px 0;
 }
 
-.header-container {
+.u-header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
-.nav-menu ul {
+.u-title {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.u-menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 1rem;
 }
 
-.nav-menu a {
+.u-menu li {
+    margin-left: 20px;
+}
+
+.u-menu a {
     color: #fff;
     text-decoration: none;
 }
 
-.hero {
+.u-section {
+    padding: 40px 20px;
     text-align: center;
-    padding: 2rem;
-    background: url('backgroundinicial.jpeg') no-repeat center center fixed;
-    background-size: cover;
-    color: #333;
 }
 
-.hero h2 {
-    margin: 1rem 0;
-    font-size: 2rem;
+.u-section-1 {
+    background-color: #f4f4f4;
+    min-height: 300px;
 }
 
-.hero p {
-    margin: 1rem 0;
-    font-size: 1.2rem;
+.u-section-2 {
+    background-color: #ddd;
 }
 
-.warning-section {
-    margin: 2rem auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
-.warning-icon {
-    width: 50px;
-    height: 50px;
-}
-
-.warning-text {
-    color: red;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.footer {
+.u-footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 1rem;
-}
-
-.social-icons a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 0.5rem;
-}
-
-@media (max-width: 768px) {
-    .header-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .nav-menu ul {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
+    padding: 20px 0;
 }
