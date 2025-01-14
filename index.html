@@ -238,6 +238,115 @@
             <p style="margin: 0; color: white;">CNPJ: 33.124.083/001-80</p>
         </div>
 
+        <section id="gallery" class="u-section u-section-6" style="background-color: #f8f9fa; padding: 40px 20px;">
+    <div class="u-container">
+        <h2 style="text-align: center; color: #e74c3c;">Galeria de Fotos</h2>
+        <p style="text-align: center; margin-bottom: 20px;">Confira momentos importantes de nossos projetos e iniciativas.</p>
+
+        <!-- Navegação por Tabs -->
+        <div class="gallery-tabs" style="text-align: center; margin-bottom: 20px;">
+            <button class="tab-button active" onclick="showGallery('infra')">Implantação de Infraestrutura</button>
+            <button class="tab-button" onclick="showGallery('training')">Treinamento de Sistemas</button>
+            <button class="tab-button" onclick="showGallery('racks')">Organização de Racks</button>
+        </div>
+
+        <!-- Subcategorias -->
+        <div id="infra" class="gallery-content active">
+            <h3 style="text-align: center; color: #333;">Implantação de Infraestrutura</h3>
+            <div class="gallery-grid">
+                <img src="infra1.jpg" alt="Infraestrutura 1">
+                <img src="infra2.jpg" alt="Infraestrutura 2">
+                <img src="infra3.jpg" alt="Infraestrutura 3">
+            </div>
+        </div>
+
+        <div id="training" class="gallery-content">
+            <h3 style="text-align: center; color: #333;">Treinamento de Sistemas</h3>
+            <div class="gallery-grid">
+                <img src="training1.jpg" alt="Treinamento 1">
+                <img src="training2.jpg" alt="Treinamento 2">
+                <img src="training3.jpg" alt="Treinamento 3">
+            </div>
+        </div>
+
+        <div id="racks" class="gallery-content">
+            <h3 style="text-align: center; color: #333;">Organização de Racks</h3>
+            <div class="gallery-grid">
+                <img src="rack1.jpg" alt="Rack 1">
+                <img src="rack2.jpg" alt="Rack 2">
+                <img src="rack3.jpg" alt="Rack 3">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Estilos CSS -->
+<style>
+    .gallery-tabs {
+        margin-bottom: 20px;
+    }
+
+    .tab-button {
+        padding: 10px 20px;
+        margin: 0 5px;
+        border: none;
+        background-color: #e74c3c;
+        color: white;
+        font-size: 1em;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .tab-button.active {
+        background-color: #c0392b;
+    }
+
+    .gallery-content {
+        display: none;
+    }
+
+    .gallery-content.active {
+        display: block;
+    }
+
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+    }
+
+    .gallery-grid img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+<!-- JavaScript -->
+<script>
+    function showGallery(tabId) {
+        // Esconde todas as galerias
+        const contents = document.querySelectorAll('.gallery-content');
+        contents.forEach(content => content.classList.remove('active'));
+
+        // Remove a classe ativa dos botões
+        const buttons = document.querySelectorAll('.tab-button');
+        buttons.forEach(button => button.classList.remove('active'));
+
+        // Mostra a galeria selecionada
+        document.getElementById(tabId).classList.add('active');
+
+        // Marca o botão correspondente como ativo
+        event.target.classList.add('active');
+    }
+
+    // Exibe a primeira aba ao carregar a página
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelector('.tab-button').click();
+    });
+</script>
+        
         <!-- E-mail no centro -->
         <div style="text-align: center; flex: 1;">
             <p style="margin: 0; color: white;">E-mail: <a href="mailto:contato@itconsultoria.com.br" style="color: #e74c3c; text-decoration: none;">contato@itconsultoria.com.br</a></p>
