@@ -344,25 +344,55 @@
     });
 </script>
 
-  <footer class="u-footer">
-    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; padding: 10px 20px;">
-        <!-- CNPJ no canto inferior esquerdo -->
-        <div style="text-align: left; flex: 1;">
-            <p style="margin: 0; color: white;">CNPJ: 33.124.083/001-80</p>
+  <footer class="u-footer" style="background-color: #333; color: white; padding: 20px; text-align: center;">
+    <div class="footer-container">
+        <div class="footer-left">
+            <p style="margin: 0;">CNPJ: 00.000.000/0000-00</p>
         </div>
-
-              
-        <!-- E-mail no centro -->
-        <div style="text-align: center; flex: 1;">
-            <p style="margin: 0; color: white;">E-mail: <a href="mailto:contato@itconsultoria.com.br" style="color: #e74c3c; text-decoration: none;">contato@itconsultoria.com.br</a></p>
+        <div class="footer-center">
+            <p style="margin: 0;">E-mail: contato@itconsultoria.com.br</p>
         </div>
-
-        <!-- Instagram no canto inferior direito -->
-        <div style="text-align: right; flex: 1;">
-            <a href="https://www.instagram.com/inst.itconsultoria" target="_blank" style="text-decoration: none; color: white;">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 8px;">
-                @inst.itconsultoria
+        <div class="footer-right">
+            <a href="https://www.instagram.com/seuperfil" target="_blank" style="color: white; text-decoration: none;">
+                <img src="instagram-icon.png" alt="Instagram" style="width: 20px; vertical-align: middle;"> @seuperfil
             </a>
         </div>
     </div>
 </footer>
+
+<!-- CSS -->
+<style>
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap; /* Para ajustar os elementos em dispositivos menores */
+        justify-content: center; /* Centraliza o conteúdo horizontalmente */
+        align-items: center; /* Centraliza o conteúdo verticalmente */
+        gap: 10px; /* Espaçamento entre os itens */
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        flex: 1 1 100%; /* Cada item ocupa 100% em dispositivos menores */
+        text-align: center; /* Alinha o conteúdo no centro */
+    }
+
+    .footer-right img {
+        display: inline-block; /* Garante alinhamento com o texto */
+        margin-right: 5px; /* Espaçamento entre o ícone e o texto */
+    }
+
+    /* Estilo para telas maiores */
+    @media (min-width: 768px) {
+        .footer-left,
+        .footer-center,
+        .footer-right {
+            flex: 1; /* Os itens dividem o espaço igualmente */
+            text-align: left; /* Alinha o texto à esquerda em telas maiores */
+        }
+
+        .footer-container {
+            justify-content: space-between; /* Espaça os itens no rodapé */
+        }
+    }
+</style>
