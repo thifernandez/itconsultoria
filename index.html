@@ -346,60 +346,84 @@
 </script>
 
  <!-- Rodapé -->
-<footer style="background-color: #343a40; color: white; padding: 20px 10px;">
-    <div class="footer-container">
-        <!-- CNPJ -->
-        <div class="footer-left">
+<footer class="u-footer">
+    <div class="u-footer-container">
+        <div class="u-footer-item u-footer-left">
             <p>CNPJ: 33.124.083/0001-80</p>
         </div>
-
-        <!-- Email -->
-        <div class="footer-center">
-            <p>E-mail: <a href="mailto:contato@itconsultoria.com.br" style="color: #e74c3c; text-decoration: none;">contato@empresa.com</a></p>
+        <div class="u-footer-item u-footer-center">
+            <p>E-mail: <a href="mailto:contato@itconsultoria.com.br">contato@itconsultoria.com.br</a></p>
         </div>
-
-        <!-- Instagram -->
-        <div class="footer-right">
-            <a href="https://www.instagram.com/inst.itconsultoria/" target="_blank" style="color: white; text-decoration: none; display: flex; align-items: center;">
-                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" style="width: 20px; height: 20px; margin-right: 8px;"> 
-                @IT Consultoria
+        <div class="u-footer-item u-footer-right">
+            <a href="https://instagram.com/inst.itconsultoria/" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram">
             </a>
         </div>
     </div>
 </footer>
 
-<!-- Estilos CSS -->
 <style>
-    .footer-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
+    /* Rodapé Geral */
+    .u-footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
         text-align: center;
     }
 
-    .footer-left,
-    .footer-center,
-    .footer-right {
-        flex: 1 1 100%;
+    .u-footer a {
+        color: #e74c3c;
+        text-decoration: none;
     }
 
-    .footer-right img {
-        display: inline-block;
+    .u-footer a:hover {
+        text-decoration: underline;
     }
 
-    /* Ajuste para dispositivos maiores */
-    @media (min-width: 768px) {
-        .footer-left,
-        .footer-center,
-        .footer-right {
-            flex: 1;
-            text-align: left;
+    .u-footer img {
+        width: 25px;
+        height: 25px;
+        vertical-align: middle;
+    }
+
+    /* Estilos de Layout do Rodapé */
+    .u-footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+
+    .u-footer-item {
+        flex: 1;
+        text-align: center;
+    }
+
+    .u-footer-left {
+        text-align: left;
+    }
+
+    .u-footer-center {
+        text-align: center;
+    }
+
+    .u-footer-right {
+        text-align: right;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+        .u-footer-container {
+            flex-direction: column;
         }
 
-        .footer-container {
-            justify-content: space-between;
+        .u-footer-left,
+        .u-footer-center,
+        .u-footer-right {
+            text-align: center;
+            margin-bottom: 10px;
         }
     }
 </style>
