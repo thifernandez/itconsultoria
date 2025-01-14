@@ -344,55 +344,61 @@
     });
 </script>
 
-  <footer class="u-footer" style="background-color: #333; color: white; padding: 20px; text-align: center;">
+ <!-- Rodapé -->
+<footer style="background-color: #343a40; color: white; padding: 20px 10px;">
     <div class="footer-container">
+        <!-- CNPJ -->
         <div class="footer-left">
-            <p style="margin: 0;">CNPJ: 00.000.000/0000-00</p>
+            <p>CNPJ: 33.124.083/0001-80</p>
         </div>
+
+        <!-- Email -->
         <div class="footer-center">
-            <p style="margin: 0;">E-mail: contato@itconsultoria.com.br</p>
+            <p>E-mail: <a href="mailto:contato@itconsultoria.com.br" style="color: #e74c3c; text-decoration: none;">contato@empresa.com</a></p>
         </div>
+
+        <!-- Instagram -->
         <div class="footer-right">
-            <a href="https://www.instagram.com/seuperfil" target="_blank" style="color: white; text-decoration: none;">
-                <img src="instagram-icon.png" alt="Instagram" style="width: 20px; vertical-align: middle;"> @seuperfil
+            <a href="https://www.instagram.com/inst.itconsultoria/" target="_blank" style="color: white; text-decoration: none; display: flex; align-items: center;">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" style="width: 20px; height: 20px; margin-right: 8px;"> 
+                @suaempresa
             </a>
         </div>
     </div>
 </footer>
 
-<!-- CSS -->
+<!-- Estilos CSS -->
 <style>
     .footer-container {
         display: flex;
-        flex-wrap: wrap; /* Para ajustar os elementos em dispositivos menores */
-        justify-content: center; /* Centraliza o conteúdo horizontalmente */
-        align-items: center; /* Centraliza o conteúdo verticalmente */
-        gap: 10px; /* Espaçamento entre os itens */
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
     }
 
     .footer-left,
     .footer-center,
     .footer-right {
-        flex: 1 1 100%; /* Cada item ocupa 100% em dispositivos menores */
-        text-align: center; /* Alinha o conteúdo no centro */
+        flex: 1 1 100%;
     }
 
     .footer-right img {
-        display: inline-block; /* Garante alinhamento com o texto */
-        margin-right: 5px; /* Espaçamento entre o ícone e o texto */
+        display: inline-block;
     }
 
-    /* Estilo para telas maiores */
+    /* Ajuste para dispositivos maiores */
     @media (min-width: 768px) {
         .footer-left,
         .footer-center,
         .footer-right {
-            flex: 1; /* Os itens dividem o espaço igualmente */
-            text-align: left; /* Alinha o texto à esquerda em telas maiores */
+            flex: 1;
+            text-align: left;
         }
 
         .footer-container {
-            justify-content: space-between; /* Espaça os itens no rodapé */
+            justify-content: space-between;
         }
     }
 </style>
