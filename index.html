@@ -15,28 +15,19 @@
         body {
             font-family: Arial, sans-serif;
             color: #333;
+            line-height: 1.6;
         }
 
-        /* Seção 1 com fundo */
-        #section1 {
-            background-image: url('backgroundinicial.jpeg');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        /* Estilo para o header */
+        /* Header */
         .u-header {
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
             right: 0;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.8);
             color: #fff;
             padding: 15px;
+            z-index: 1000;
         }
 
         .u-header-container {
@@ -64,9 +55,9 @@
             font-size: 1em;
         }
 
-        /* Seção 2, 3 e 4 */
+        /* Seções */
         section {
-            padding: 40px 20px;
+            padding: 100px 20px 40px;
         }
 
         .u-container {
@@ -82,79 +73,37 @@
         }
 
         .u-container p {
-            font-size: 1.1em;
-            line-height: 1.6;
-        }
-
-        /* Estilos para o formulário */
-        input, textarea, button {
-            width: 100%;
-            padding: 12px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 1em;
-        }
-
-        button {
-            background-color: #e74c3c;
-            color: white;
-            cursor: pointer;
-            border: none;
-        }
-
-        button:hover {
-            background-color: #c0392b;
+            text-align: justify;
+            margin-bottom: 20px;
         }
 
         /* Footer */
         .u-footer {
-            text-align: center;
             background-color: #333;
-            color: white;
-            padding: 20px 0;
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .u-footer a {
+            color: #e74c3c;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .u-footer a:hover {
+            text-decoration: underline;
         }
 
         .u-footer img {
-            width: 30px;
-            height: 30px;
+            width: 25px;
+            height: 25px;
+            margin-left: 10px;
             vertical-align: middle;
         }
 
-        /* Estilo para telas pequenas */
+        /* Responsividade */
         @media (max-width: 768px) {
-            .u-header-container h1 {
-                font-size: 1.2em;
-            }
-
-            .u-menu ul {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .u-menu ul li {
-                margin: 10px 0;
-            }
-
-            .u-container h2 {
-                font-size: 1.6em;
-            }
-
-            .u-container p {
-                font-size: 1em;
-            }
-
-            section {
-                padding: 30px 15px;
-            }
-
-            input, textarea, button {
-                font-size: 1em;
-            }
-        }
-
-        /* Estilo para telas muito pequenas (dispositivos móveis em modo retrato) */
-        @media (max-width: 480px) {
             .u-header-container {
                 flex-direction: column;
                 text-align: center;
@@ -165,35 +114,8 @@
                 align-items: center;
             }
 
-            .u-header-container h1 {
-                font-size: 1.1em;
-                margin-bottom: 10px;
-            }
-
             .u-menu ul li {
-                margin: 5px 0;
-            }
-
-            .u-footer {
-                padding: 15px 0;
-            }
-        }
-
-        /* Estilo específico para a seção 3 */
-        #section3 ul {
-            list-style-type: none; /* Remove os ícones padrão */
-            text-align: center; /* Centraliza o texto da lista */
-        }
-
-        #section3 ul li {
-            margin-bottom: 15px;
-            font-size: 1.1em;
-        }
-
-        /* Ajuste de largura de texto para telas menores */
-        @media (max-width: 768px) {
-            #section3 ul li {
-                font-size: 1em;
+                margin: 10px 0;
             }
         }
     </style>
@@ -201,21 +123,19 @@
 <body>
     <header class="u-header">
         <div class="u-header-container">
-            <h1 class="u-text u-title">IT Consultoria em Tecnologia</h1>
+            <h1>IT Consultoria em Tecnologia</h1>
             <nav class="u-menu">
                 <ul>
                     <li><a href="#section1">Início</a></li>
                     <li><a href="#section2">Sobre</a></li>
                     <li><a href="#section3">Serviços</a></li>
-                    <li><a href="#section4">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Seção de Início com fundo -->
-    <section id="section1" class="u-section u-section-1">
-        <!-- Conteúdo opcional aqui, se necessário -->
+    <!-- Seção Início -->
+    <section id="section1" style="background-image: url('backgroundinicial.jpeg'); background-size: cover; height: 100vh; display: flex; justify-content: center; align-items: center;">
     </section>
 
     <!-- Seção Sobre -->
@@ -223,57 +143,39 @@
         <div class="u-container">
             <h2>Sobre</h2>
             <p>
-                A IT Consultoria em Tecnologia nasceu de um sonho: transformar o mundo da tecnologia em um ambiente mais acessível, eficiente e inovador para todos. Tudo começou com a minha paixão pela tecnologia e pela busca constante por soluções que realmente fizessem a diferença no dia a dia das pessoas e das empresas. Após anos trabalhando na área, percebi que muitas empresas enfrentavam os mesmos desafios: lidar com a complexidade de sistemas, integrar tecnologias e, acima de tudo, encontrar parceiros confiáveis que entendessem suas necessidades. Foi então que decidi unir minha experiência, criatividade e determinação para criar algo novo. Assim, em [ano de fundação], nasceu a IT Consultoria em Tecnologia, com a missão de oferecer consultoria personalizada, soluções práticas e um atendimento humano e ágil. Desde o início, nossa visão foi clara: ser uma referência nacional em gestão de tecnologia, não apenas por nossa expertise, mas também pelo compromisso com nossos clientes. Cada projeto que realizamos é guiado pelos nossos valores: integridade, inovação e comprometimento. Hoje, temos orgulho de impactar positivamente empresas de diferentes tamanhos e segmentos. Seja ajudando a otimizar processos, implementando novas ferramentas ou capacitando equipes, estamos aqui para transformar desafios em oportunidades. Acreditamos que a tecnologia não é apenas uma ferramenta, mas um meio de criar conexões, impulsionar negócios e simplificar vidas. E seguimos firmes nesse propósito, sempre inovando e crescendo junto com você. Obrigado por fazer parte dessa história!
+                A IT Consultoria em Tecnologia nasceu de um sonho: transformar o mundo da tecnologia em um ambiente mais acessível, eficiente e inovador para todos.
+                Desde o início, nossa visão foi clara: ser uma referência nacional em gestão de tecnologia, não apenas por nossa expertise, mas também pelo compromisso com nossos clientes.
             </p>
         </div>
     </section>
 
-   <!-- Seção de Serviços -->
-<section id="section3" class="u-section u-section-3" style="background-color: #f4f4f4;">
-    <div class="u-container">
-        <h2>Serviços</h2>
-
-        <!-- Subcategoria: Para Você -->
-        <div id="servicos-para-voce" class="service-category">
-            <h3 style="text-align: center; color: #e74c3c; margin-top: 20px;">Para Você</h3>
-            <div style="text-align: justify; margin-top: 10px;">
-                Nossa consultoria em gestão de projetos de TI oferece suporte especializado para coordenar e executar projetos complexos. Com uma abordagem prática e focada, ajudamos no planejamento e implementação de soluções tecnológicas para atender às suas necessidades pessoais. Seja para organizar suas demandas tecnológicas ou para garantir que sua infraestrutura esteja alinhada com seus objetivos, estamos prontos para ajudar. Além disso, acompanhamos de perto o andamento das iniciativas, monitorando prazos e entregas, sempre com foco na qualidade e nos resultados esperados.
+    <!-- Seção de Serviços -->
+    <section id="section3" class="u-section u-section-3" style="background-color: #f4f4f4;">
+        <div class="u-container">
+            <h2>Serviços</h2>
+            <div>
+                <h3 style="color: #e74c3c; text-align: center;">Para Você</h3>
+                <p>Nossa consultoria oferece soluções personalizadas para suas necessidades tecnológicas pessoais.</p>
             </div>
-        </div>
-
-        <!-- Subcategoria: Para Sua Empresa -->
-        <div id="servicos-para-empresa" class="service-category">
-            <h3 style="text-align: center; color: #e74c3c; margin-top: 20px;">Para Sua Empresa</h3>
-            <div style="text-align: justify; margin-top: 10px;">
-                Com uma ampla experiência no setor, oferecemos serviços técnicos especializados que abrangem desde a montagem e manutenção de servidores até a configuração de redes corporativas. Também atuamos com a gestão de sistemas de varejo e PDV, utilizando plataformas robustas para otimizar o desempenho operacional. Nossos serviços incluem ainda respostas ágeis para situações emergenciais, como falhas críticas em sistemas, garantindo que sua empresa mantenha a continuidade operacional mesmo em momentos desafiadores. Além disso, realizamos auditorias detalhadas para identificar oportunidades de otimização de custos, maximizando o retorno sobre investimento em tecnologia.
+            <div>
+                <h3 style="color: #e74c3c; text-align: center;">Para Sua Empresa</h3>
+                <p>Oferecemos serviços de infraestrutura, redes corporativas, sistemas de varejo e auditorias para otimização de custos.</p>
             </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-    <!-- Seção de Contato -->
-    <section id="section4" class="u-section u-section-4" style="background-color: #ffffff;">
-        <div class="u-container" style="max-width: 800px; margin: 0 auto;">
-            <h2>Contato</h2>
-            <p>Entre em contato conosco para mais informações ou para agendar uma consulta personalizada:</p>
-            <form action="send_email.php" method="POST">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Mensagem:</label>
-                <textarea id="message" name="message" rows="6"></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
         </div>
     </section>
 
-    <!-- Nova Seção de Serviços -->
-    <section id="services" class="u-section u-section-5" style="background-color: #f8f9fa;">
-        <div class="u-container">
+    <!-- Rodapé -->
+    <footer class="u-footer">
+        <p>&copy; 2025 IT Consultoria em Tecnologia</p>
+        <p>
+            CNPJ: 33.124.083/001-80 | <a href="mailto:contato@itconsultoria.com.br">contato@itconsultoria.com.br</a>
+        </p>
+        <p>
+            Siga-nos no Instagram: 
+            <a href="https://www.instagram.com/inst.itconsultoria" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram">
+            </a>
+        </p>
+    </footer>
+</body>
+</html>
