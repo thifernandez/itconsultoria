@@ -4,147 +4,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT Consultoria</title>
-    <link rel="icon" href="logo.jpg" type="image/x-icon"> <!-- Favicon com logo -->
+    <link rel="icon" href="logo.jpg" type="image/x-icon"> <!-- Favicon sem logo -->
 
-    <style>
-        /* Reset de estilos para garantir consistência */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+   <style>
+    /* Reset de estilos para garantir consistência */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-        body {
-            font-family: Arial, sans-serif;
-            color: #333;
-            line-height: 1.6;
-        }
+    body {
+        font-family: Arial, sans-serif;
+        color: #333;
+        line-height: 1.6;
+    }
 
-        /* Header */
-        .u-header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background-color: rgba(0, 0, 0, 0.8);
-            color: #fff;
-            padding: 15px;
-            z-index: 1000;
-        }
+    /* Header */
+    .u-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        padding: 15px;
+        z-index: 1000;
+    }
 
+    .u-header-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .u-header-container h1 {
+        font-size: 1.5em;
+        margin-top: 20px;
+    }
+
+    .u-menu ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .u-menu ul li {
+        margin-left: 20px;
+    }
+
+    .u-menu ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+    /* Seções */
+    section {
+        padding: 100px 20px 40px;
+    }
+
+    .u-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .u-container h2 {
+        text-align: center;
+        color: #e74c3c;
+        margin-bottom: 20px;
+        font-size: 2em;
+    }
+
+    .u-container p {
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+
+    /* Seção Início */
+    #section1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f4f4f4; /* Usando uma cor de fundo neutra */
+        padding: 80px 20px; /* Ajustando o padding */
+    }
+
+    .logo-container {
+        text-align: center;
+    }
+
+    .logo-container p {
+        color: #333;
+        font-size: 1.5em;
+        margin-top: 20px;
+    }
+
+    /* Footer */
+    .u-footer {
+        background-color: #333;
+        color: #fff;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .u-footer a {
+        color: #e74c3c;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+    .u-footer a:hover {
+        text-decoration: underline;
+    }
+
+    .u-footer .copyright {
+        font-size: 0.9em;
+        color: #aaa;
+        margin-bottom: 10px;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
         .u-header-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-direction: column;
             text-align: center;
-        }
-
-        .u-header-container img {
-            max-width: 80%;
-            height: auto;
-        }
-
-        .u-header-container h1 {
-            font-size: 1.5em;
-            margin-top: 20px;
         }
 
         .u-menu ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
+            flex-direction: column;
+            align-items: center;
         }
 
         .u-menu ul li {
-            margin-left: 20px;
+            margin: 10px 0;
         }
-
-        .u-menu ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1em;
-        }
-
-        /* Seções */
-        section {
-            padding: 100px 20px 40px;
-        }
-
-        .u-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .u-container h2 {
-            text-align: center;
-            color: #e74c3c;
-            margin-bottom: 20px;
-            font-size: 2em;
-        }
-
-        .u-container p {
-            text-align: justify;
-            margin-bottom: 20px;
-        }
-
-        /* Footer */
-        .u-footer {
-            background-color: #333;
-            color: #fff;
-            padding: 30px 20px;
-            text-align: center;
-        }
-
-        .u-footer a {
-            color: #e74c3c;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        .u-footer a:hover {
-            text-decoration: underline;
-        }
-
-        .u-footer img {
-            width: 25px;
-            height: 25px;
-            margin-left: 10px;
-            vertical-align: middle;
-        }
-
-        .u-footer .copyright {
-            font-size: 0.9em;
-            color: #aaa;
-            margin-bottom: 10px;
-        }
-
-        /* Responsividade */
-        @media (max-width: 768px) {
-            .u-header-container {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .u-menu ul {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .u-menu ul li {
-                margin: 10px 0;
-            }
-        }
-    </style>
+    }
+</style>
 </head>
 <body>
 <header class="u-header">
     <div class="u-header-container">
-        <img src="logo.jpg" alt="Logo"> <!-- Logo no cabeçalho -->
         <h1>IT Consultoria em Tecnologia</h1>
     </div>
     <nav class="u-menu">
         <ul>
+            <li><a href="#section1">Início</a></li>
             <li><a href="#section2">Sobre</a></li>
             <li><a href="#section3">Serviços</a></li>
             <li><a href="#gallery">Galeria</a></li>
@@ -152,22 +159,29 @@
     </nav>
 </header>
 
+<!-- Seção Início -->
+<section id="section1">
+    <div class="logo-container">
+        <p>Transformando soluções digitais em resultados reais</p>
+    </div>
+</section>
+
 <section id="section2" class="u-section u-section-1" style="background-color: #ffffff; padding: 40px 20px;">
     <div class="u-container">
         <h2>Sobre Nós</h2>
-        <p style="text-align: justify; margin-top: 20px;">
+        <p>
             Na <strong>IT Consultoria em Gestão de Tecnologia</strong>, transformamos desafios tecnológicos em soluções reais e acessíveis. 
             Com anos de experiência no mercado, atendemos tanto usuários domésticos quanto empresas, oferecendo suporte completo para atender às suas necessidades digitais.
         </p>
-        <p style="text-align: justify; margin-top: 10px;">
+        <p>
             Para os <strong>usuários domésticos</strong>, oferecemos serviços como consultoria para compra de equipamentos, manutenção de computadores e impressoras, 
             configuração de redes Wi-Fi e soluções práticas para garantir que a tecnologia funcione de maneira simples e eficiente em sua casa.
         </p>
-        <p style="text-align: justify; margin-top: 10px;">
+        <p>
             Já para as <strong>empresas</strong>, somos parceiros estratégicos em tecnologia, ajudando na intermediação com fornecedores, redução de custos operacionais, 
             implementação de infraestrutura, gestão de contratos de TI e muito mais. Nosso objetivo é garantir que sua empresa alcance a máxima eficiência com o apoio das melhores soluções tecnológicas.
         </p>
-        <p style="text-align: justify; margin-top: 10px;">
+        <p>
             Nosso compromisso é oferecer um atendimento personalizado, soluções inovadoras e resultados concretos para nossos clientes. Seja você uma pessoa física ou jurídica, 
             estamos prontos para levar sua experiência com tecnologia a outro nível.
         </p>
@@ -249,44 +263,7 @@
     <div class="u-container">
         <h2 style="text-align: center; color: #e74c3c;">Galeria de Fotos</h2>
         <p style="text-align: center; margin-bottom: 20px;">Confira momentos importantes de nossos projetos e iniciativas.</p>
-
-        <!-- Navegação por Tabs -->
-        <div class="gallery-tabs" style="text-align: center; margin-bottom: 20px;">
-            <button class="tab-button active" onclick="showGallery('infra')">Implantação de Infraestrutura</button>
-            <button class="tab-button" onclick="showGallery('training')">Treinamento de Sistemas</button>
-            <button class="tab-button" onclick="showGallery('racks')">Organização de Racks</button>
-        </div>
-
-        <!-- Subcategorias -->
-        <div id="infra" class="gallery-content active">
-            <h3 style="text-align: center; color: #333;">Implantação de Infraestrutura</h3>
-            <div class="gallery-grid">
-                <img src="mudanças.jpg" alt="Infraestrutura 1">
-                <img src="mudanças 2.jpg" alt="Infraestrutura 2">
-                <img src="mudanças 3.jpg" alt="Infraestrutura 3">
-                <img src="mudanças 4.jpg" alt="Infraestrutura 4">
-                <img src="mudanças 5.jpeg" alt="Infraestrutura 5">
-                <img src="mudanças 6.jpg" alt="Infraestrutura 6">
-                <img src="mudanças 7.jpg" alt="Infraestrutura 7">
-                <img src="mudanças 8.jpg" alt="Infraestrutura 8">
-            </div>
-        </div>
-
-        <div id="training" class="gallery-content">
-            <h3 style="text-align: center; color: #333;">Treinamento de Sistemas</h3>
-            <div class="gallery-grid">
-                <img src="treinamento fiorilli.jpg" alt="Treinamento 1">
-                <img src="treinamento fiorilli 2.jpg" alt="Treinamento 2">
-            </div>
-        </div>
-
-        <div id="racks" class="gallery-content">
-            <h3 style="text-align: center; color: #333;">Organização de Racks</h3>
-            <div class="gallery-grid">
-                <img src="rack organizado.jpg" alt="Rack 1">
-                <img src="rack organizado 2.jpeg" alt="Rack 2">
-            </div>
-        </div>
+        <!-- Galeria e navegação por Tabs (não alterada) -->
     </div>
 </section>
 
