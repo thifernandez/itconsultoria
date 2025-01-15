@@ -102,6 +102,40 @@
         margin-top: 20px;
     }
 
+    /* Nova Seção - Destaques */
+    #section1a {
+        background-color: #e7e7e7;
+        padding: 60px 20px;
+    }
+
+    .highlight-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+
+    .highlight-item {
+        width: 30%;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+    }
+
+    .highlight-item:hover {
+        transform: scale(1.05);
+    }
+
+    .highlight-item h3 {
+        color: #e74c3c;
+    }
+
+    .highlight-item p {
+        color: #555;
+    }
+
     /* Footer */
     .u-footer {
         background-color: #333;
@@ -141,6 +175,15 @@
         .u-menu ul li {
             margin: 10px 0;
         }
+
+        .highlight-container {
+            flex-direction: column;
+        }
+
+        .highlight-item {
+            width: 80%;
+            margin-bottom: 20px;
+        }
     }
 </style>
 </head>
@@ -159,6 +202,28 @@
     </nav>
 </header>
 <p></p>
+
+<!-- Nova Seção - Destaques -->
+<section id="section1a" class="u-section">
+    <div class="u-container">
+        <h2>Destaques</h2>
+        <div class="highlight-container">
+            <div class="highlight-item">
+                <h3>Consultoria Personalizada</h3>
+                <p>Oferecemos consultoria sob medida para garantir que sua tecnologia atenda às suas necessidades específicas.</p>
+            </div>
+            <div class="highlight-item">
+                <h3>Segurança Digital</h3>
+                <p>Implementamos as melhores práticas para proteger seus dados e sistemas contra ameaças externas.</p>
+            </div>
+            <div class="highlight-item">
+                <h3>Suporte Técnico</h3>
+                <p>Nosso time está sempre pronto para oferecer suporte técnico rápido e eficiente, tanto presencial quanto remoto.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section id="section2" class="u-section u-section-1" style="background-color: #ffffff; padding: 40px 20px;">
     <div class="u-container">
         <h2>Sobre Nós</h2>
