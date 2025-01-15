@@ -89,16 +89,18 @@
     }
 
     /* Seção Início */
-#section1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('logo.jpg');
-    background-size: contain; /* A imagem será ajustada para caber na seção */
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 80px 20px; /* Ajuste de padding para garantir espaço */
-}
+    #section1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('logo.jpg');
+        background-size: cover; /* A imagem preencherá completamente a seção */
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh; /* A altura da seção será 100% da altura da tela */
+        padding: 0 20px; /* Ajuste de padding para garantir o espaçamento adequado */
+    }
+
     .logo-container {
         text-align: center;
     }
@@ -330,4 +332,3 @@
 
 </body>
 </html>
-
