@@ -6,153 +6,136 @@
     <title>IT Consultoria</title>
     <link rel="icon" href="logo.jpg" type="image/x-icon"> <!-- Favicon com logo -->
 
-   <style>
-    /* Reset de estilos para garantir consistência */
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+    <style>
+        /* Reset de estilos para garantir consistência */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    body {
-        font-family: Arial, sans-serif;
-        color: #333;
-        line-height: 1.6;
-    }
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
 
-    /* Header */
-    .u-header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        background-color: rgba(0, 0, 0, 0.8);
-        color: #fff;
-        padding: 15px;
-        z-index: 1000;
-    }
+        /* Header */
+        .u-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 15px;
+            z-index: 1000;
+        }
 
-    .u-header-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .u-header-container img {
-        max-width: 80%;
-        height: auto;
-    }
-
-    .u-header-container h1 {
-        font-size: 1.5em;
-        margin-top: 20px;
-    }
-
-    .u-menu ul {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
-    }
-
-    .u-menu ul li {
-        margin-left: 20px;
-    }
-
-    .u-menu ul li a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 1em;
-    }
-
-    /* Seções */
-    section {
-        padding: 100px 20px 40px;
-    }
-
-    .u-container {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    .u-container h2 {
-        text-align: center;
-        color: #e74c3c;
-        margin-bottom: 20px;
-        font-size: 2em;
-    }
-
-    .u-container p {
-        text-align: justify;
-        margin-bottom: 20px;
-    }
-
-    /* Seção Início */
-    #section1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-image: url('logo.jpg');
-        background-size: cover; /* A imagem preencherá completamente a seção */
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 100vh; /* A altura da seção será 100% da altura da tela */
-        padding: 0 20px; /* Ajuste de padding para garantir o espaçamento adequado */
-    }
-
-    .logo-container {
-        text-align: center;
-    }
-
-    /* Footer */
-    .u-footer {
-        background-color: #333;
-        color: #fff;
-        padding: 30px 20px;
-        text-align: center;
-    }
-
-    .u-footer a {
-        color: #e74c3c;
-        text-decoration: none;
-        margin: 0 10px;
-    }
-
-    .u-footer a:hover {
-        text-decoration: underline;
-    }
-
-    .u-footer img {
-        width: 25px;
-        height: 25px;
-        margin-left: 10px;
-        vertical-align: middle;
-    }
-
-    .u-footer .copyright {
-        font-size: 0.9em;
-        color: #aaa;
-        margin-bottom: 10px;
-    }
-
-    /* Responsividade */
-    @media (max-width: 768px) {
         .u-header-container {
-            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
         }
 
+        .u-header-container img {
+            max-width: 80%;
+            height: auto;
+        }
+
+        .u-header-container h1 {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
         .u-menu ul {
-            flex-direction: column;
-            align-items: center;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
         }
 
         .u-menu ul li {
-            margin: 10px 0;
+            margin-left: 20px;
         }
-    }
-</style>
+
+        .u-menu ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        /* Seções */
+        section {
+            padding: 100px 20px 40px;
+        }
+
+        .u-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .u-container h2 {
+            text-align: center;
+            color: #e74c3c;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .u-container p {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        .u-footer {
+            background-color: #333;
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .u-footer a {
+            color: #e74c3c;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .u-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .u-footer img {
+            width: 25px;
+            height: 25px;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+
+        .u-footer .copyright {
+            font-size: 0.9em;
+            color: #aaa;
+            margin-bottom: 10px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .u-header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .u-menu ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .u-menu ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
 </head>
 <body>
 <header class="u-header">
@@ -162,21 +145,12 @@
     </div>
     <nav class="u-menu">
         <ul>
-            <li><a href="#section1">Início</a></li>
             <li><a href="#section2">Sobre</a></li>
             <li><a href="#section3">Serviços</a></li>
             <li><a href="#gallery">Galeria</a></li>
         </ul>
     </nav>
 </header>
-
-<!-- Seção Início -->
-<section id="section1">
-    <div class="logo-container">
-        <img src="logo.jpg" alt="Logo da IT Consultoria" style="max-width: 60%; height: auto;">
-        <p style="color: #fff; font-size: 1.5em; margin-top: 20px;">Transformando soluções digitais em resultados reais</p>
-    </div>
-</section>
 
 <section id="section2" class="u-section u-section-1" style="background-color: #ffffff; padding: 40px 20px;">
     <div class="u-container">
