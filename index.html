@@ -12,7 +12,7 @@
             box-sizing: border-box;
         }
 
-    body {
+       body {
         font-family: Arial, sans-serif;
         color: #333;
         line-height: 1.6;
@@ -32,12 +32,12 @@
 
     .u-header-container {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
 
     .u-header-container img {
-        width: 50px;
+        width: 100px;
         height: auto;
         margin-right: 10px;
     }
@@ -123,6 +123,18 @@
         .u-menu ul li {
             margin: 10px 0;
         }
+    }
+
+    /* Centralizar a logo na seção inicial */
+    #section1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url('assets/images/logo.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 </style>
 </head>
