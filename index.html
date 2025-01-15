@@ -30,17 +30,21 @@
         color: #fff;
         padding: 15px;
         z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
     }
 
     .u-header-container {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: center;
     }
 
     .u-header-container h1 {
         font-size: 1.5em;
-        margin-top: 20px;
+        margin-left: 20px; /* Espaçamento entre logo e título */
     }
 
     .u-menu ul {
@@ -82,24 +86,24 @@
         margin-bottom: 20px;
     }
 
-    /* Seção Nova 1 - Com logo e fundo */
+    /* Seção 0 - Com logo e fundo */
     #section0 {
         background-image: url('logo.jpg');
         background-size: cover;
         background-position: center;
-        padding: 100px 20px;
+        padding: 120px 20px;
         color: white;
         text-align: center;
+        margin-top: 80px; /* Ajuste para evitar sobreposição com o cabeçalho */
     }
 
     .logo-container {
-        position: absolute;
-        left: 20px;
-        top: 20px;
+        display: block;
+        margin: 0 auto;
     }
 
     .logo-container img {
-        height: 60px; /* Tamanho da logo igual ao do cabeçalho */
+        height: 80px; /* Tamanho ajustado para a logo */
     }
 
     /* Seção 1 */
@@ -162,7 +166,6 @@
         color: #fff;
         padding: 30px 20px;
         text-align: center;
-        position: relative;
     }
 
     .u-footer a {
@@ -179,26 +182,6 @@
         font-size: 0.9em;
         color: #aaa;
         margin-bottom: 10px;
-    }
-
-    /* CNPJ e Instagram */
-    .footer-info {
-        display: flex;
-        justify-content: space-between;
-        position: absolute;
-        left: 20px;
-        right: 20px;
-        bottom: 20px;
-        width: 100%;
-    }
-
-    .cnpj {
-        font-size: 0.8em;
-        color: #aaa;
-    }
-
-    .instagram {
-        font-size: 1.2em;
     }
 
     /* Responsividade */
@@ -225,38 +208,6 @@
             width: 80%;
             margin-bottom: 20px;
         }
-    }
-
-    /* Galeria */
-    #gallery {
-        background-color: #f9f9f9;
-        padding: 60px 20px;
-    }
-
-    .gallery-category {
-        margin-bottom: 40px;
-    }
-
-    .gallery-category h3 {
-        color: #e74c3c;
-        font-size: 1.8em;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .gallery-container {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        gap: 20px;
-        text-align: center;
-    }
-
-    .gallery-item img {
-        width: 250px; /* Ajustando o tamanho das imagens */
-        height: 200px;
-        object-fit: cover;
-        border-radius: 8px;
     }
     </style>
 </head>
