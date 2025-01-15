@@ -95,11 +95,6 @@
         background-position: center;
         background-repeat: no-repeat;
         height: 80vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        text-align: center;
         position: relative;
         z-index: 1;
         margin-top: 80px;
@@ -114,6 +109,14 @@
         height: 100%;
         background: rgba(0, 0, 0, 0.6);
         z-index: -1;
+    }
+
+    /* Texto abaixo da imagem */
+    #section0-text {
+        padding: 40px 20px;
+        text-align: center;
+        background-color: #fff;
+        margin-top: -20px;
     }
 
     /* Ajuste para que a seção 1 não seja sobreposta pelo cabeçalho */
@@ -244,12 +247,11 @@
 </header>
 
 <!-- Seção 0 - Nova seção antes da seção 1 -->
-<section id="section0" class="u-section">
-    <div class="u-container">
-        <h2>Bem-vindo à IT Consultoria</h2>
-        <p>Oferecemos soluções completas para suas necessidades tecnológicas.</p>
-    </div>
-</section>
+<section id="section0" class="u-section"></section>
+<div id="section0-text">
+    <h2>Bem-vindo à IT Consultoria</h2>
+    <p>Oferecemos soluções completas para suas necessidades tecnológicas.</p>
+</div>
 
 <!-- Seção 1 -->
 <section id="section1" class="u-section">
