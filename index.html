@@ -346,8 +346,15 @@
     <div class="u-container">
         <h2>Galeria de Fotos</h2>
 
+        <!-- Botões de Subcategorias -->
+        <div class="gallery-buttons">
+            <button onclick="showCategory('infraestrutura')">Implantação de Infraestrutura</button>
+            <button onclick="showCategory('racks')">Implantação e Organização de Racks</button>
+            <button onclick="showCategory('treinamentos')">Treinamentos</button>
+        </div>
+
         <!-- Subcategoria: Implantação de Infraestrutura -->
-        <div class="gallery-category">
+        <div id="infraestrutura" class="gallery-category" style="display: block;">
             <h3>Implantação de Infraestrutura</h3>
             <div class="gallery-container">
                 <div class="gallery-item">
@@ -377,9 +384,9 @@
             </div>
         </div>
 
-        <!-- Subcategoria: Instalação de Racks -->
-        <div class="gallery-category">
-            <h3>Instalação de Racks</h3>
+        <!-- Subcategoria: Implantação e Organização de Racks -->
+        <div id="racks" class="gallery-category" style="display: none;">
+            <h3>Implantação e Organização de Racks</h3>
             <div class="gallery-container">
                 <div class="gallery-item">
                     <img src="rack organizado.jpg" alt="Rack Organizado 1">
@@ -391,7 +398,7 @@
         </div>
 
         <!-- Subcategoria: Treinamentos -->
-        <div class="gallery-category">
+        <div id="treinamentos" class="gallery-category" style="display: none;">
             <h3>Treinamentos</h3>
             <div class="gallery-container">
                 <div class="gallery-item">
@@ -405,6 +412,20 @@
 
     </div>
 </section>
+
+<script>
+    // Função para mostrar as imagens de uma subcategoria específica
+    function showCategory(category) {
+        // Esconde todas as subcategorias
+        const categories = document.querySelectorAll('.gallery-category');
+        categories.forEach(function(category) {
+            category.style.display = 'none';
+        });
+
+        // Mostra a subcategoria clicada
+        document.getElementById(category).style.display = 'block';
+    }
+</script>
 <!-- Rodapé -->
 <footer class="u-footer">
     <p class="copyright">© 2025 IT Consultoria em Tecnologia - Todos os direitos reservados</p>
