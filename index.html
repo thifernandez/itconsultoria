@@ -36,20 +36,24 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            text-align: center;
         }
 
         .u-header-container img {
-            height: 40px;
-            margin-right: 10px;
+            max-width: 80%; /* Ajustado para logo ocupar mais espaço */
+            height: auto;
         }
 
         .u-header-container h1 {
             font-size: 1.5em;
+            margin-top: 20px;
         }
 
         .u-menu ul {
             list-style: none;
             display: flex;
+            justify-content: center;
+            margin-top: 10px;
         }
 
         .u-menu ul li {
@@ -89,18 +93,15 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            background-image: url('logo.jpg');
+            background-size: cover;
             height: 100vh;
-            background-color: #f4f4f4;
-            text-align: center;
+            background-position: center;
         }
 
         .logo-container {
             text-align: center;
-        }
-
-        .logo-container img {
-            width: 150px;
-            height: auto;
+            max-width: 100%;
         }
 
         /* Footer */
@@ -128,6 +129,12 @@
             vertical-align: middle;
         }
 
+        .u-footer .copyright {
+            font-size: 0.9em;
+            color: #aaa;
+            margin-bottom: 10px;
+        }
+
         /* Responsividade */
         @media (max-width: 768px) {
             .u-header-container {
@@ -151,24 +158,28 @@
     <div class="u-header-container">
         <img src="logo.jpg" alt="Logo"> <!-- Logo no cabeçalho -->
         <h1>IT Consultoria em Tecnologia</h1>
-        <nav class="u-menu">
-            <ul>
-                <li><a href="#section1">Início</a></li>
-                <li><a href="#section2">Sobre</a></li>
-                <li><a href="#section3">Serviços</a></li>
-                <li><a href="#gallery">Galeria</a></li>
-            </ul>
-        </nav>
     </div>
+    <nav class="u-menu">
+        <ul>
+            <li><a href="#section1">Início</a></li>
+            <li><a href="#section2">Sobre</a></li>
+            <li><a href="#section3">Serviços</a></li>
+            <li><a href="#gallery">Galeria</a></li>
+        </ul>
+    </nav>
 </header>
 
-    <!-- Seção Início -->
-    <section id="section1" style="background-image: url('logo.jpg'); background-size: cover; height: 100vh; display: flex; justify-content: center; align-items: center;">
-    </section>
+<!-- Seção Início -->
+<section id="section1">
+    <div class="logo-container">
+        <img src="logo.jpg" alt="Logo da IT Consultoria" style="max-width: 60%; height: auto;">
+        <p style="color: #fff; font-size: 1.5em; margin-top: 20px;">Transformando soluções digitais em resultados reais</p>
+    </div>
+</section>
 
-   <section id="section2" class="u-section u-section-1" style="background-color: #ffffff; padding: 40px 20px;">
+<section id="section2" class="u-section u-section-1" style="background-color: #ffffff; padding: 40px 20px;">
     <div class="u-container">
-        <h2 style="text-align: center; color: #2c3e50;">Sobre Nós</h2>
+        <h2>Sobre Nós</h2>
         <p style="text-align: justify; margin-top: 20px;">
             Na <strong>IT Consultoria em Gestão de Tecnologia</strong>, transformamos desafios tecnológicos em soluções reais e acessíveis. 
             Com anos de experiência no mercado, atendemos tanto usuários domésticos quanto empresas, oferecendo suporte completo para atender às suas necessidades digitais.
@@ -191,7 +202,7 @@
     </div>
 </section>
 
-  <section id="section3" class="u-section u-section-3" style="background-color: #f4f4f4;">
+<section id="section3" class="u-section u-section-3" style="background-color: #f4f4f4;">
     <div class="u-container">
         <h2>Serviços</h2>
 
@@ -259,7 +270,7 @@
     </div>
 </section>
 
-     <section id="gallery" class="u-section u-section-6" style="background-color: #f8f9fa; padding: 40px 20px;">
+<section id="gallery" class="u-section u-section-6" style="background-color: #f8f9fa; padding: 40px 20px;">
     <div class="u-container">
         <h2 style="text-align: center; color: #e74c3c;">Galeria de Fotos</h2>
         <p style="text-align: center; margin-bottom: 20px;">Confira momentos importantes de nossos projetos e iniciativas.</p>
@@ -304,85 +315,20 @@
     </div>
 </section>
 
-<!-- Estilos CSS -->
-<style>
-    .gallery-tabs {
-        margin-bottom: 20px;
-    }
-
-    .tab-button {
-        padding: 10px 20px;
-        margin: 0 5px;
-        border: none;
-        background-color: #e74c3c;
-        color: white;
-        font-size: 1em;
-        cursor: pointer;
-        border-radius: 5px;
-    }
-
-    .tab-button.active {
-        background-color: #c0392b;
-    }
-
-    .gallery-content {
-        display: none;
-    }
-
-    .gallery-content.active {
-        display: block;
-    }
-
-    .gallery-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 10px;
-    }
-
-    .gallery-grid img {
-        width: 100%;
-        height: 150px; /* Altura fixa para uniformizar o tamanho */
-        object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-</style>
-
-<!-- JavaScript -->
-<script>
-    function showGallery(tabId) {
-        // Esconde todas as galerias
-        const contents = document.querySelectorAll('.gallery-content');
-        contents.forEach(content => content.classList.remove('active'));
-
-        // Remove a classe ativa dos botões
-        const buttons = document.querySelectorAll('.tab-button');
-        buttons.forEach(button => button.classList.remove('active'));
-
-        // Mostra a galeria selecionada
-        document.getElementById(tabId).classList.add('active');
-
-        // Marca o botão correspondente como ativo
-        event.target.classList.add('active');
-    }
-
-    // Exibe a primeira aba ao carregar a página
-    document.addEventListener('DOMContentLoaded', () => {
-        document.querySelector('.tab-button').click();
-    });
-</script>
-
- <!-- Rodapé -->
+<!-- Rodapé -->
 <footer class="u-footer">
+    <p class="copyright">© 2025 IT Consultoria em Tecnologia - Todos os direitos reservados</p>
     <div class="u-footer-container">
         <div class="u-footer-item u-footer-left">
             <p>CNPJ: 33.124.083/0001-80</p>
         </div>
         <div class="u-footer-item u-footer-right">
-            <p>Telefone: (11) 99296-9296</p>
+            <p>Telefone: (11) 3234-5678</p>
             <p><a href="mailto:contato@itconsultoria.com">contato@itconsultoria.com</a></p>
         </div>
     </div>
 </footer>
+
 </body>
 </html>
+
