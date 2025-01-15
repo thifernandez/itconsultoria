@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT Consultoria</title>
+    <link rel="icon" href="logo.jpg" type="image/x-icon"> <!-- Favicon com logo -->
+
     <style>
         /* Reset de estilos para garantir consistência */
         * {
@@ -12,135 +14,142 @@
             box-sizing: border-box;
         }
 
-         body {
-        font-family: Arial, sans-serif;
-        color: #333;
-        line-height: 1.6;
-    }
-
-    /* Header */
-    .u-header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        background-color: rgba(0, 0, 0, 0.8);
-        color: #fff;
-        padding: 15px;
-        z-index: 1000;
-    }
-
-    .u-header-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .u-header-container h1 {
-        font-size: 1.5em;
-    }
-
-    .u-menu ul {
-        list-style: none;
-        display: flex;
-    }
-
-    .u-menu ul li {
-        margin-left: 20px;
-    }
-
-    .u-menu ul li a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 1em;
-    }
-
-    /* Seções */
-    section {
-        padding: 100px 20px 40px;
-    }
-
-    .u-container {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    .u-container h2 {
-        text-align: center;
-        color: #e74c3c;
-        margin-bottom: 20px;
-        font-size: 2em;
-    }
-
-    .u-container p {
-        text-align: justify;
-        margin-bottom: 20px;
-    }
-
-    /* Logo Centralizada na Seção 1 */
-    #section1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: #f4f4f4;
-    }
-
-    .logo-container {
-        text-align: center;
-    }
-
-    .logo-container img {
-        width: 150px;
-        height: auto;
-    }
-
-    /* Footer */
-    .u-footer {
-        background-color: #333;
-        color: #fff;
-        padding: 30px 20px;
-        text-align: center;
-    }
-
-    .u-footer a {
-        color: #e74c3c;
-        text-decoration: none;
-        margin: 0 10px;
-    }
-
-    .u-footer a:hover {
-        text-decoration: underline;
-    }
-
-    .u-footer img {
-        width: 25px;
-        height: 25px;
-        margin-left: 10px;
-        vertical-align: middle;
-    }
-
-    /* Responsividade */
-    @media (max-width: 768px) {
-        .u-header-container {
-            flex-direction: column;
-            text-align: center;
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
         }
 
-        .u-menu ul {
-            flex-direction: column;
+        /* Header */
+        .u-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 15px;
+            z-index: 1000;
+        }
+
+        .u-header-container {
+            display: flex;
+            justify-content: center;
             align-items: center;
         }
 
-        .u-menu ul li {
-            margin: 10px 0;
+        .u-header-container img {
+            height: 40px;
+            margin-right: 10px;
         }
-    }
-</style>
+
+        .u-header-container h1 {
+            font-size: 1.5em;
+        }
+
+        .u-menu ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .u-menu ul li {
+            margin-left: 20px;
+        }
+
+        .u-menu ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        /* Seções */
+        section {
+            padding: 100px 20px 40px;
+        }
+
+        .u-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .u-container h2 {
+            text-align: center;
+            color: #e74c3c;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .u-container p {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        /* Logo Centralizada na Seção 1 */
+        #section1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .logo-container {
+            text-align: center;
+        }
+
+        .logo-container img {
+            width: 150px;
+            height: auto;
+        }
+
+        /* Footer */
+        .u-footer {
+            background-color: #333;
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .u-footer a {
+            color: #e74c3c;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .u-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .u-footer img {
+            width: 25px;
+            height: 25px;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .u-header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .u-menu ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .u-menu ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
 </head>
 <body>
 <header class="u-header">
     <div class="u-header-container">
+        <img src="logo.jpg" alt="Logo"> <!-- Logo no cabeçalho -->
         <h1>IT Consultoria em Tecnologia</h1>
         <nav class="u-menu">
             <ul>
@@ -157,7 +166,7 @@
     <section id="section1" style="background-image: url('logo.jpg'); background-size: cover; height: 100vh; display: flex; justify-content: center; align-items: center;">
     </section>
 
-   <section id="sobre" class="u-section u-section-1" style="background-color: #ffffff; padding: 40px 20px;">
+   <section id="section2" class="u-section u-section-1" style="background-color: #ffffff; padding: 40px 20px;">
     <div class="u-container">
         <h2 style="text-align: center; color: #2c3e50;">Sobre Nós</h2>
         <p style="text-align: justify; margin-top: 20px;">
@@ -369,79 +378,11 @@
         <div class="u-footer-item u-footer-left">
             <p>CNPJ: 33.124.083/0001-80</p>
         </div>
-        <div class="u-footer-item u-footer-center">
-            <p>E-mail: <a href="mailto:contato@itconsultoria.com.br">contato@itconsultoria.com.br</a></p>
-        </div>
         <div class="u-footer-item u-footer-right">
-            <a href="https://instagram.com/inst.itconsultoria/" target="_blank">
-                <img src="instagram-icon.png" alt="Instagram">
-            </a>
+            <p>Telefone: (11) 99296-9296</p>
+            <p><a href="mailto:contato@itconsultoria.com">contato@itconsultoria.com</a></p>
         </div>
     </div>
 </footer>
-
-<style>
-    /* Rodapé Geral */
-    .u-footer {
-        background-color: #333;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-    }
-
-    .u-footer a {
-        color: #e74c3c;
-        text-decoration: none;
-    }
-
-    .u-footer a:hover {
-        text-decoration: underline;
-    }
-
-    .u-footer img {
-        width: 25px;
-        height: 25px;
-        vertical-align: middle;
-    }
-
-    /* Estilos de Layout do Rodapé */
-    .u-footer-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 1200px;
-        margin: 0 auto;
-        flex-wrap: wrap;
-    }
-
-    .u-footer-item {
-        flex: 1;
-        text-align: center;
-    }
-
-    .u-footer-left {
-        text-align: left;
-    }
-
-    .u-footer-center {
-        text-align: center;
-    }
-
-    .u-footer-right {
-        text-align: right;
-    }
-
-    /* Responsividade */
-    @media (max-width: 768px) {
-        .u-footer-container {
-            flex-direction: column;
-        }
-
-        .u-footer-left,
-        .u-footer-center,
-        .u-footer-right {
-            text-align: center;
-            margin-bottom: 10px;
-        }
-    }
-</style>
+</body>
+</html>
