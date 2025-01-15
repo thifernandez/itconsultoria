@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT Consultoria</title>
-    <link rel="icon" href="logo.jpg" type="image/x-icon"> <!-- Favicon sem logo -->
+    <link rel="icon" href="logo.jpg" type="image/x-icon">
 
-   <style>
+    <style>
     /* Reset de estilos para garantir consistência */
     * {
         margin: 0;
@@ -34,9 +34,8 @@
 
     .u-header-container {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        text-align: center;
     }
 
     .u-header-container h1 {
@@ -83,27 +82,37 @@
         margin-bottom: 20px;
     }
 
-    /* Seção Início */
+    /* Seção Nova 1 - Com logo e fundo */
+    #section0 {
+        background-image: url('logo.jpg');
+        background-size: cover;
+        background-position: center;
+        padding: 100px 20px;
+        color: white;
+        text-align: center;
+    }
+
+    .logo-container {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+
+    .logo-container img {
+        height: 60px; /* Tamanho da logo igual ao do cabeçalho */
+    }
+
+    /* Seção 1 */
     #section1 {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #f4f4f4; /* Usando uma cor de fundo neutra */
-        padding: 80px 20px; /* Ajustando o padding */
+        background-color: #f4f4f4;
+        padding: 80px 20px;
     }
 
-    .logo-container {
-        text-align: center;
-    }
-
-    .logo-container p {
-        color: #333;
-        font-size: 1.5em;
-        margin-top: 20px;
-    }
-
-    /* Nova Seção - Destaques */
-    #section1a {
+    /* Seção 2 */
+    #section2 {
         background-color: #e7e7e7;
         padding: 60px 20px;
     }
@@ -136,7 +145,18 @@
         color: #555;
     }
 
-    /* Footer */
+    /* Seção 3 */
+    #section3 {
+        background-color: #ffffff;
+        padding: 40px 20px;
+    }
+
+    /* Seção 4 */
+    #section4 {
+        background-color: #f4f4f4;
+        padding: 40px 20px;
+    }
+
     .u-footer {
         background-color: #333;
         color: #fff;
@@ -185,11 +205,14 @@
             margin-bottom: 20px;
         }
     }
-</style>
+    </style>
 </head>
 <body>
 <header class="u-header">
     <div class="u-header-container">
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Logo IT Consultoria">
+        </div>
         <h1>IT Consultoria em Tecnologia</h1>
     </div>
     <nav class="u-menu">
@@ -201,10 +224,17 @@
         </ul>
     </nav>
 </header>
-<p></p>
 
-<!-- Nova Seção - Destaques -->
-<section id="section1a" class="u-section">
+<!-- Seção 0 - Nova seção antes da seção 1 -->
+<section id="section0" class="u-section">
+    <div class="u-container">
+        <h2>Bem-vindo à IT Consultoria</h2>
+        <p>Transformamos sua experiência com tecnologia, oferecendo soluções inovadoras e personalizadas para você e sua empresa.</p>
+    </div>
+</section>
+
+<!-- Seção 1 -->
+<section id="section1" class="u-section">
     <div class="u-container">
         <h2>Destaques</h2>
         <div class="highlight-container">
@@ -224,7 +254,8 @@
     </div>
 </section>
 
-<section id="section2" class="u-section u-section-1" style="background-color: #ffffff; padding: 40px 20px;">
+<!-- Seção 2 - Sobre -->
+<section id="section2" class="u-section">
     <div class="u-container">
         <h2>Sobre Nós</h2>
         <p>
@@ -239,105 +270,35 @@
             Já para as <strong>empresas</strong>, somos parceiros estratégicos em tecnologia, ajudando na intermediação com fornecedores, redução de custos operacionais, 
             implementação de infraestrutura, gestão de contratos de TI e muito mais. Nosso objetivo é garantir que sua empresa alcance a máxima eficiência com o apoio das melhores soluções tecnológicas.
         </p>
-        <p>
-            Nosso compromisso é oferecer um atendimento personalizado, soluções inovadoras e resultados concretos para nossos clientes. Seja você uma pessoa física ou jurídica, 
-            estamos prontos para levar sua experiência com tecnologia a outro nível.
-        </p>
-        <p style="text-align: center; margin-top: 20px;">
-            <em>"Transformando soluções digitais em resultados reais."</em>
-        </p>
     </div>
 </section>
 
-<section id="section3" class="u-section u-section-3" style="background-color: #f4f4f4;">
+<!-- Seção 3 - Serviços -->
+<section id="section3" class="u-section">
     <div class="u-container">
         <h2>Serviços</h2>
-
-        <!-- Subcategoria: Para Você -->
         <div id="servicos-para-voce" class="service-category">
-            <h3 style="text-align: center; color: #e74c3c; margin-top: 20px;">Para Usuário Doméstico</h3>
-            <div style="text-align: justify; margin-top: 10px;">
-                <p>
-                    <strong>Consultoria em Compras de Aparelhos e Periféricos:</strong>  
-                    Ajudamos você a escolher o equipamento ideal para suas necessidades, seja um computador, notebook, impressora ou acessórios como mouses, teclados e webcams.
-                </p>
-                <p>
-                    <strong>Manutenção de Computadores e Impressoras:</strong>  
-                    Realizamos a manutenção corretiva e preventiva de equipamentos, garantindo o pleno funcionamento do seu computador e impressora.
-                </p>
-                <p>
-                    <strong>Configuração de Redes Wi-Fi:</strong>  
-                    Criamos e otimizamos redes Wi-Fi para a sua casa, garantindo maior alcance e estabilidade no sinal, além de segurança no acesso.
-                </p>
-                <p>
-                    <strong>Backup e Recuperação de Dados:</strong>  
-                    Apoiamos na criação de rotinas de backup e, caso necessário, recuperamos informações de dispositivos danificados ou infectados por vírus.
-                </p>
-                <p>
-                    <strong>Instalação de Softwares e Soluções Domésticas:</strong>  
-                    Desde aplicativos para uso pessoal até sistemas de segurança, realizamos a instalação e configuração completa.
-                </p>
-            </div>
+            <h3>Para Usuário Doméstico</h3>
+            <p>Consultoria em compras, manutenção de equipamentos, configuração de redes Wi-Fi, backup, recuperação de dados, instalação de software.</p>
         </div>
-
-        <!-- Subcategoria: Para Empresas -->
         <div id="servicos-para-empresa" class="service-category">
-            <h3 style="text-align: center; color: #e74c3c; margin-top: 20px;">Para Empresas</h3>
-            <div style="text-align: justify; margin-top: 10px;">
-                <p>
-                    <strong>Intermediação com Prestadores de Serviços:</strong>  
-                    Fazemos a ponte entre sua empresa e fornecedores de internet, telefonia, hospedagem de sites e outros serviços tecnológicos, garantindo a melhor negociação e suporte técnico.
-                </p>
-                <p>
-                    <strong>Consultoria em Redução de Custos:</strong>  
-                    Analisamos o uso de tecnologia na sua empresa e identificamos formas de otimizar os gastos, maximizando o retorno sobre o investimento.
-                </p>
-                <p>
-                    <strong>Planejamento e Implementação de Infraestrutura de TI:</strong>  
-                    Projetamos e configuramos redes corporativas, servidores e sistemas, assegurando que sua infraestrutura atenda às demandas do negócio.
-                </p>
-                <p>
-                    <strong>Gestão de Contratos e Serviços de TI:</strong>  
-                    Acompanhamos contratos com fornecedores de tecnologia para garantir que os SLAs (Acordos de Nível de Serviço) sejam cumpridos e que sua empresa receba o suporte esperado.
-                </p>
-                <p>
-                    <strong>Manutenção e Suporte Técnico Corporativo:</strong>  
-                    Realizamos manutenções preventivas e corretivas em equipamentos de TI, além de suporte técnico presencial e remoto para resolver problemas cotidianos.
-                </p>
-                <p>
-                    <strong>Segurança da Informação:</strong>  
-                    Implementamos soluções de segurança digital, como firewalls, antivírus corporativos, e práticas para evitar acessos não autorizados aos sistemas da empresa.
-                </p>
-                <p>
-                    <strong>Treinamento de Equipes:</strong>  
-                    Capacitamos sua equipe em ferramentas e práticas tecnológicas, ajudando sua empresa a ser mais eficiente no uso da tecnologia.
-                </p>
-            </div>
+            <h3>Para Empresas</h3>
+            <p>Consultoria em redução de custos, planejamento de infraestrutura, segurança da informação, suporte técnico e treinamento de equipes.</p>
         </div>
     </div>
 </section>
 
-<section id="gallery" class="u-section u-section-6" style="background-color: #f8f9fa; padding: 40px 20px;">
+<!-- Seção 4 - Galeria -->
+<section id="gallery" class="u-section">
     <div class="u-container">
-        <h2 style="text-align: center; color: #e74c3c;">Galeria de Fotos</h2>
-        <p style="text-align: center; margin-bottom: 20px;">Confira momentos importantes de nossos projetos e iniciativas.</p>
-        <!-- Galeria e navegação por Tabs (não alterada) -->
+        <h2>Galeria de Fotos</h2>
+        <p>Confira momentos importantes de nossos projetos e iniciativas.</p>
     </div>
 </section>
 
 <!-- Rodapé -->
 <footer class="u-footer">
     <p class="copyright">© 2025 IT Consultoria em Tecnologia - Todos os direitos reservados</p>
-    <div class="u-footer-container">
-        <div class="u-footer-item u-footer-left">
-            <p>CNPJ: 33.124.083/0001-80</p>
-        </div>
-        <div class="u-footer-item u-footer-right">
-            <p>Telefone: (11) 99296-9296</p>
-            <p><a href="mailto:contato@itconsultoria.com">contato@itconsultoria.com</a></p>
-        </div>
-    </div>
 </footer>
-
 </body>
 </html>
