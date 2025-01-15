@@ -12,113 +12,119 @@
             box-sizing: border-box;
         }
 
-        body {
-            font-family: Arial, sans-serif;
-            color: #333;
-            line-height: 1.6;
-        }
+    body {
+        font-family: Arial, sans-serif;
+        color: #333;
+        line-height: 1.6;
+    }
 
-        /* Header */
-        .u-header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background-color: rgba(0, 0, 0, 0.8);
-            color: #fff;
-            padding: 15px;
-            z-index: 1000;
-        }
+    /* Header */
+    .u-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        padding: 15px;
+        z-index: 1000;
+    }
 
+    .u-header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .u-header-container img {
+        width: 50px;
+        height: auto;
+        margin-right: 10px;
+    }
+
+    .u-header-container h1 {
+        font-size: 1.5em;
+    }
+
+    .u-menu ul {
+        list-style: none;
+        display: flex;
+    }
+
+    .u-menu ul li {
+        margin-left: 20px;
+    }
+
+    .u-menu ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+    /* Seções */
+    section {
+        padding: 100px 20px 40px;
+    }
+
+    .u-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .u-container h2 {
+        text-align: center;
+        color: #e74c3c;
+        margin-bottom: 20px;
+        font-size: 2em;
+    }
+
+    .u-container p {
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+
+    /* Footer */
+    .u-footer {
+        background-color: #333;
+        color: #fff;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .u-footer a {
+        color: #e74c3c;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+    .u-footer a:hover {
+        text-decoration: underline;
+    }
+
+    .u-footer img {
+        width: 25px;
+        height: 25px;
+        margin-left: 10px;
+        vertical-align: middle;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
         .u-header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .u-header-container h1 {
-            font-size: 1.5em;
+            flex-direction: column;
+            text-align: center;
         }
 
         .u-menu ul {
-            list-style: none;
-            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .u-menu ul li {
-            margin-left: 20px;
+            margin: 10px 0;
         }
-
-        .u-menu ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1em;
-        }
-
-        /* Seções */
-        section {
-            padding: 100px 20px 40px;
-        }
-
-        .u-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .u-container h2 {
-            text-align: center;
-            color: #e74c3c;
-            margin-bottom: 20px;
-            font-size: 2em;
-        }
-
-        .u-container p {
-            text-align: justify;
-            margin-bottom: 20px;
-        }
-
-        /* Footer */
-        .u-footer {
-            background-color: #333;
-            color: #fff;
-            padding: 30px 20px;
-            text-align: center;
-        }
-
-        .u-footer a {
-            color: #e74c3c;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        .u-footer a:hover {
-            text-decoration: underline;
-        }
-
-        .u-footer img {
-            width: 25px;
-            height: 25px;
-            margin-left: 10px;
-            vertical-align: middle;
-        }
-
-        /* Responsividade */
-        @media (max-width: 768px) {
-            .u-header-container {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .u-menu ul {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .u-menu ul li {
-                margin: 10px 0;
-            }
-        }
-    </style>
+    }
+</style>
 </head>
 <body>
 <header class="u-header">
@@ -136,7 +142,7 @@
 </header>
 
     <!-- Seção Início -->
-    <section id="section1" style="background-image: url('backgroundinicial.jpeg'); background-size: cover; height: 100vh; display: flex; justify-content: center; align-items: center;">
+    <section id="section1" style="background-image: url('logo.jpg'); background-size: cover; height: 100vh; display: flex; justify-content: center; align-items: center;">
     </section>
 
    <section id="sobre" class="u-section u-section-1" style="background-color: #ffffff; padding: 40px 20px;">
