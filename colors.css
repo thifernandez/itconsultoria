@@ -8,37 +8,38 @@
 
 /* Aplicação das cores ao site */
 body {
-    background-color: var(--cor-primaria);
-    color: var(--cor-texto);
-    font-family: Arial, sans-serif;
+    background-color: var(--cor-primaria) !important;
+    color: var(--cor-texto) !important;
+    font-family: Arial, sans-serif !important;
 }
 
 h1, h2, h3 {
-    color: var(--cor-texto);
+    color: var(--cor-texto) !important;
 }
 
 p {
-    color: var(--cor-secundaria);
+    color: var(--cor-secundaria) !important;
 }
 
 a {
-    color: var(--cor-destaque);
-    text-decoration: none;
+    color: var(--cor-destaque) !important;
+    text-decoration: none !important;
 }
 
 a:hover {
-    color: var(--cor-texto);
+    color: var(--cor-texto) !important;
 }
 
 /* Botão com destaque */
 button {
-    background-color: var(--cor-destaque);
-    color: var(--cor-texto);
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+    background-color: var(--cor-destaque) !important;
+    color: var(--cor-texto) !important;
+    border: none !important;
+    padding: 10px 20px !important;
+    cursor: pointer !important;
 }
 
 button:hover {
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-secundaria) !important;
 }
+
