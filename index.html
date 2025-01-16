@@ -395,6 +395,7 @@
         </div>
 
 <!-- Chatbot Container -->
+<button id="toggle-chat" onclick="toggleChat()">Abrir Chat</button>
 <div id="chat-container">
     <div id="chat-history"></div>
     <input type="text" id="user-input" placeholder="Digite sua mensagem...">
@@ -479,7 +480,20 @@
         </div>
     </div>
 </footer>
-    <script>
+<script>
+    function toggleChat() {
+        var chatContainer = document.getElementById("chat-container");
+        var toggleButton = document.getElementById("toggle-chat");
+
+        if (chatContainer.style.display === "none" || chatContainer.style.display === "") {
+            chatContainer.style.display = "block";
+            toggleButton.textContent = "Fechar Chat";
+        } else {
+            chatContainer.style.display = "none";
+            toggleButton.textContent = "Abrir Chat";
+        }
+    }
+
     function sendMessage() {
         var userInput = document.getElementById("user-input").value;
         if (userInput.trim() === "") return;
@@ -516,6 +530,7 @@
         });
     }
 </script>
+
 
 </body>
 </html>
