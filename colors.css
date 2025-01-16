@@ -1,0 +1,44 @@
+/* Definição da paleta de cores */
+:root {
+    --cor-primaria: #2E2E2E; /* Cinza escuro */
+    --cor-secundaria: #787878; /* Cinza médio */
+    --cor-destaque: #D1363A; /* Vermelho vibrante */
+    --cor-texto: #E0E0E0; /* Branco metálico */
+}
+
+/* Aplicação das cores ao site */
+body {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto);
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    color: var(--cor-texto);
+}
+
+p {
+    color: var(--cor-secundaria);
+}
+
+a {
+    color: var(--cor-destaque);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--cor-texto);
+}
+
+/* Botão com destaque */
+button {
+    background-color: var(--cor-destaque);
+    color: var(--cor-texto);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--cor-secundaria);
+}
