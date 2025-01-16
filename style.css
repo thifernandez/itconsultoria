@@ -1,4 +1,5 @@
 #chat-container {
+    display: none; /* Esconde o chatbot ao carregar a página */
     width: 300px;
     height: 400px;
     border: 1px solid #ccc;
@@ -11,31 +12,18 @@
     border-radius: 5px;
 }
 
-#chat-history {
-    height: 300px;
-    overflow-y: auto;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 10px;
-    padding: 5px;
-}
-
-input {
-    width: 70%;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-button {
-    width: 25%;
-    padding: 5px;
+#toggle-chat {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 15px;
     background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-button:hover {
+#toggle-chat:hover {
     background-color: #0056b3;
 }
