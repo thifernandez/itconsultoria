@@ -111,9 +111,98 @@
         z-index: -1;
     }
 
+    /* Texto abaixo da imagem */
+    #section0-text {
+        padding: 40px 20px;
+        text-align: center;
+        background-color: #fff;
+        margin-top: -20px;
+    }
+
+    /* Ajuste para que a seção 1 não seja sobreposta pelo cabeçalho */
+    #section1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f4f4f4;
+        padding: 80px 20px;
+        margin-top: 20px;
+    }
+
+    /* Seção 2 */
+    #section2 {
+        background-color: #e7e7e7;
+        padding: 60px 20px;
+    }
+
+    .highlight-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .highlight-item {
+        flex: 1;
+        padding: 40px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+    }
+
+    .highlight-item:hover {
+        transform: scale(1.05);
+    }
+
+    .highlight-item h3 {
+        color: #e74c3c;
+        margin-bottom: 15px;
+    }
+
+    .highlight-item p {
+        color: #555;
+    }
+
+    /* Seção 3 */
+    #section3 {
+        background-color: #ffffff;
+        padding: 40px 20px;
+    }
+
+    /* Seção 4 */
+    #section4 {
+        background-color: #f4f4f4;
+        padding: 40px 20px;
+    }
+
+    .u-footer {
+        background-color: #333;
+        color: #fff;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .u-footer a {
+        color: #e74c3c;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+    .u-footer a:hover {
+        text-decoration: underline;
+    }
+
+    .u-footer .copyright {
+        font-size: 0.9em;
+        color: #aaa;
+        margin-bottom: 10px;
+    }
+
     /* Responsividade */
     @media (max-width: 768px) {
-        .u-header {
+        .u-header-container {
             flex-direction: column;
             text-align: center;
         }
